@@ -41,12 +41,13 @@
 		<tr valign="bottom">
 
 			<td align="left"><a href="/"><img src="site/interface/logo_small.png" alt="Kanar Online Logo"></a></td>
-			<td>
+			<td align="right" valign="middle">
 				{if !$hide_search}
 				<form method="post" action="">
-					Search <input type="text" class="searchTextBox" name="searchKeywords" size="15"> by
-					{$type_select} in {$department_select}
-					<input type="submit" name="navBarSubmitSearch" value="search" />
+					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
+					<input type="submit" name="navBarSubmitSearch" class="searchBtn" value="Go" /> 
+					<br/>
+					<span>By {$type_select} in {$department_select}</span>
 					<a href="{$search_link}" class="subHeader">[Advanced]</a>
 				</form>
 				{/if}

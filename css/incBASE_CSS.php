@@ -191,17 +191,30 @@ td.topRightNav a:hover {color: white;}
 
 .searchSelect 
 {  
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	color:<?=PRIMARY_COLOR?>; 
-	font-weight:bold; 
+	font-size: 12px;
+	color: #333;
+	border: 1px solid #ccc;
+	padding: 5px 6px;
+	border-radius: 4px;
 }
 
 .searchTextBox 
 { 
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
-	color:#333333; 
-	font-weight:bold; 
-	border: 1px <?=PRIMARY_COLOR?> solid;
+	font-size: 12px;
+	color: #333333;
+	padding: 5px 10px;
+	width: 233px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.searchBtn {
+	border: 1px solid #333;
+	background: #333;
+	color: white;
+	border-radius: 0 4px 4px 0;
+	padding: 4px 5px 5px;
+	margin: 0 0 0 -4px;
 }
 
 /* Info Boxes */
