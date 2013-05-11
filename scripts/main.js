@@ -2,7 +2,7 @@
 
 	function getAccountInfo () {
 
-		var info_html = 'Welcome <b>[account_name]</b>. Your Account Number is: <b>[account_number]</b>.',
+		var info_html = 'Welcome <b>[account_name]</b> Your Account Number is: <b>[account_number]</b>.',
 
 			$name = $('#account_name'),
 			$number = $('#account_number');

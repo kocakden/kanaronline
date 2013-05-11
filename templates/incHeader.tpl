@@ -31,8 +31,8 @@
 
 
 	<table width="100%" cellspacing="0" cellpadding="0" border="0">
-
-		<tr>
+		
+		<tr style="display:none">
 
 			<td align="center" colspan="3"><img src="site/interface/confidential_wholesale.gif"></td>
 
@@ -51,13 +51,7 @@
 				</form>
 				{/if}
 				<br/>
-				{if $is_guest}
-				<a href="{$logout_link}">Log In</a>
-				{else}
-				<span class="accountInfo">
-					<span id="account_info"></span><a href="{$logout_link}">[Log Out]</a>
-				</span>
-				{/if}
+
 				
 			</td>
 			<!--
@@ -109,8 +103,15 @@
 
 							<a href="javascript: {$help_link}">Help</a>
 						</td>
-						<td align="right" class="topRightNav" style="padding-right:5px;">
-							
+						<td align="left" class="topRightNav">
+							<span id="account_info"></span>
+						</td>
+						<td align="right" class="topRightNav">
+							{if $is_guest}
+							<a href="{$logout_link}">Log In</a>
+							{else}
+							<a href="{$logout_link}">Log Out</a>
+							{/if}
 						</td>
 
 						{/if}
@@ -131,8 +132,8 @@
 
 		<tr>
 
-			<td colspan="3"><img src="site/interface/clear_spacer.gif" height="10"></td>
+			<td colspan="3"><img src="site/interface/clear_spacer.gif" height="30"></td>
 
-		</tr>
+		</tr>		
 
 	</table>

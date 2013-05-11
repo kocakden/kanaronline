@@ -161,20 +161,20 @@ td.tableHeaderOutlineLeftVert { border-left: 1px #333333 solid; }
 /* Header */
 table#newSearchTable
 {
-	margin: 0;
-	background-color: <?=SEARCH_COLOR?>;
+
+	/*background-color: <?=SEARCH_COLOR?>;*/
 }
 
 tr#newSearch 
 {
 	color: <?=PRIMARY_COLOR?>; 
-	font-weight: bold;
 }
 
 tr#newSearch td {font-size: <?=$baseText + 2 + $fontSizeChange?>pt;}
 
 td.topRightNav
 {
+	padding:0 5px;
 	color: #696969; 
 	font-size: <?=$baseText + 2 + $fontSizeChange?>pt;
 }
@@ -226,15 +226,6 @@ td.topRightNav a:hover {color: white;}
 	border-radius: 4px;
 	border: 1px solid #333;
 	text-decoration: none;
-}
-
-.accountInfo {
-	font-size: 13px;
-	padding-top: 5px;
-}
-
-.accountInfo a {
-	font-size: 13px;
 }
 
 /* Info Boxes */
