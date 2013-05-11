@@ -17,7 +17,7 @@ body
 	margin: 0px;
 	background-color: white;
 	color: black;
-	width: 968px;
+	width: 1100px;
 	margin: 0 auto;
 }
 
@@ -204,7 +204,7 @@ td.topRightNav a:hover {color: white;}
 	color: #333333;
 	padding: 5px 10px;
 	width: 233px;
-	border-radius: 4px;
+	border-radius: 4px 0 0 4px;
 	border: 1px solid #ccc;
 }
 
@@ -215,6 +215,26 @@ td.topRightNav a:hover {color: white;}
 	border-radius: 0 4px 4px 0;
 	padding: 4px 5px 5px;
 	margin: 0 0 0 -4px;
+	cursor: pointer;
+}
+
+.advancedSearchBtn {
+	font-size: 13px;
+	background: #333;
+	padding: 4px 5px 5px;
+	color: #fff;
+	border-radius: 4px;
+	border: 1px solid #333;
+	text-decoration: none;
+}
+
+.accountInfo {
+	font-size: 13px;
+	padding-top: 5px;
+}
+
+.accountInfo a {
+	font-size: 13px;
 }
 
 /* Info Boxes */
@@ -1154,3 +1174,10 @@ ol.legalNumberOutline li{ padding-top: 15px}
 
 /* Generic CSS */
 .center{text-align: center;}
+
+
+/* Javascript overwrites */
+
+.hidden {
+	display: none;
+}

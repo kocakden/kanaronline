@@ -40,17 +40,25 @@
 
 		<tr valign="bottom">
 
-			<td align="left"><a href="/"><img src="site/interface/logo_small.png" alt="Kanar Online Logo"></a></td>
+			<td align="left"><a href="/"><img width src="site/interface/logo_small.png" alt="Kanar Online Logo"></a></td>
 			<td align="right" valign="middle">
 				{if !$hide_search}
 				<form method="post" action="">
 					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
 					<input type="submit" name="navBarSubmitSearch" class="searchBtn" value="Go" /> 
-					<br/>
-					<span>By {$type_select} in {$department_select}</span>
-					<a href="{$search_link}" class="subHeader">[Advanced]</a>
+					<a href="{$search_link}" class="advancedSearchBtn">Advanced</a>
+					<!-- By {$type_select} in {$department_select} -->
 				</form>
 				{/if}
+				<br/>
+				{if $is_guest}
+				<a href="{$logout_link}">Log In</a>
+				{else}
+				<span class="accountInfo">
+					<span id="account_info"></span><a href="{$logout_link}">[Log Out]</a>
+				</span>
+				{/if}
+				
 			</td>
 			<!--
 			<td>{$banner}</td>
@@ -102,11 +110,7 @@
 							<a href="javascript: {$help_link}">Help</a>
 						</td>
 						<td align="right" class="topRightNav" style="padding-right:5px;">
-							{if $is_guest}
-							<a href="{$logout_link}">Log In</a>
-							{else}
-							<a href="{$logout_link}">Log Out</a>
-							{/if}
+							
 						</td>
 
 						{/if}

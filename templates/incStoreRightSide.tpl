@@ -3,17 +3,17 @@
 		<td align="center">
 			<table width="185" cellpadding="0" cellspacing="0" border="0"><!-- your account table -->
 				<tr><!-- your account table r 1 -->
-					<td height="23" class="infoBoxHeader">Your Account</td>
+					<td height="23" class="infoBoxHeader">Your Basket</td>
 				</tr>
 				<tr><!-- your account table r 1 -->
 					<td class="infoBoxContent">
 						<table cellpadding="2" border="0" width="167">
-							<tr>
+							<tr class="hidden">
 								<td>
-									<span class="yourAccountStore">{$store_name}</span><br/>
-									Account: {$store_account_number}<br>
+									<span id="account_name" class="yourAccountStore">{$store_name}</span><br>
+									Account: <span id="account_number">{$store_account_number}</span><br>
 									{if $buyer_account}
-										Buyer: {$buyer_account}
+										Buyer: <span id="account_buyer">{$buyer_account}</span>
 									{/if}
 								</td>
 							</tr>

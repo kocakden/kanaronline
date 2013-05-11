@@ -13,5 +13,6 @@
 				<td colspan="4">&nbsp;</td>
 			</tr>
 		</table><!-- end page table -->
+		<script src="/includes/scripts/main.js"></script>
 	</body>
 </html>
