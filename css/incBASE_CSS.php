@@ -17,7 +17,7 @@ body
 	margin: 0px;
 	background-color: white;
 	color: black;
-	width: 1100px;
+	width: 968px;
 	margin: 0 auto;
 }
 
