@@ -28,7 +28,7 @@
 
 <body onLoad="preloadImages();">
 
-
+	<div class="wrapper">
 
 	<table width="100%" cellspacing="0" cellpadding="0" border="0">
 		

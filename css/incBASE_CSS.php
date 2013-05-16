@@ -15,10 +15,18 @@ body
 {
 	font-family: arial, helvetica, verdana;
 	margin: 0px;
-	background-color: white;
+	background: url(/img/site/bg/furley_bg.png);
 	color: black;
+}
+
+body > .wrapper {
 	width: 1100px;
-	margin: 0 auto;
+	margin: 32px auto;
+	background: #fff;
+	padding: 16px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 img{
@@ -76,6 +84,19 @@ table.lightBox td.borderBottom
 td.footer
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
+	height: 21px;
+	vertical-align: bottom;
+	text-align: center;
+	color: #999;
+}
+
+td.footer a {
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color: #999;
+}
+
+td.footer a:hover {
+	color: #333;
 }
 
 .large
@@ -187,7 +208,7 @@ td.topRightNav a
 	font-weight: bold;
 }
 
-td.topRightNav a:hover {color: white;}
+td.topRightNav a:hover {color: #111;}
 
 .searchSelect 
 {  
@@ -201,11 +222,18 @@ td.topRightNav a:hover {color: white;}
 .searchTextBox 
 { 
 	font-size: 12px;
-	color: #333333;
+	color: #999;
 	padding: 5px 10px;
 	width: 233px;
 	border-radius: 4px 0 0 4px;
 	border: 1px solid #ccc;
+	-webkit-transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.searchTextBox:focus {
+	outline: 0;
+	color: #333333;
+	border-color: #333;
 }
 
 .searchBtn {

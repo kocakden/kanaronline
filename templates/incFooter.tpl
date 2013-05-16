@@ -1,6 +1,6 @@
 			<tr>
 				<td colspan="4" width="100%">
-					<hr size="1" color="#000000" width="100%" noshade>
+					<hr size="1" color="#CCCCCC" width="100%">
 				</td>
 			</tr>	
 			<tr>
@@ -9,10 +9,8 @@
 					&copy;2002-{$current_year}&nbsp;<a href="http://www.cutting-edgesolutions.com/" target="_blank">Cutting-Edge Solutions</a> / <a href="http://www.pro-activewebsites.com/" target="_blank">Pro-Active Websites</a>. All Rights Reserved.&nbsp;&nbsp;
 				</td>
 			</tr>
-			<tr>
-				<td colspan="4">&nbsp;</td>
-			</tr>
 		</table><!-- end page table -->
+	</div>
 		<script src="/includes/scripts/main.js"></script>
 	</body>
 </html>
