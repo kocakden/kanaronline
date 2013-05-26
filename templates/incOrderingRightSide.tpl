@@ -1,98 +1,25 @@
-<table border="0" cellspacing="0" cellpadding="0" width="197">
+<table border="0" cellspacing="0" cellpadding="0" width="0" style="position:relative">
 	{if !$is_guest}
 		<tr><!-- right side table r 1 -->
 			<td align="center">
-				<table width="185" cellpadding="0" cellspacing="0" border="0"><!-- your account table -->
-					<tr><!-- your account table r 1 -->
-						<td height="23" class="infoBoxHeader">Your Basket</td>
-					</tr>
-					<tr><!-- your account table r 1 -->
-						<td class="infoBoxContent">
-							<table cellpadding="2" border="0">
-								<tr class="hidden">
-									<td>
-										<span id="account_name" class="yourAccountStore">{$store_name}</span><br>
-										Account: <span id="account_number">{$store_account_number}</span><br>
-										{if $buyer_account}
-											Buyer: <span id="account_buyer">{$buyer_account}</span>
-										{/if}
-									</td>
-								</tr>
-								{if $order_display}
-									<tr>
-										<td align="center">
-											<table cellpadding="0" cellspacing="0" border="0">
-												<tr>
-													<td height="8" class="resultsBoxHeader"><img src="site/interface/clear_spacer.gif" height="8"></td>
-												</tr>
-												<tr>
-													<td class="resultsBoxContent">
-														<table cellspacing="0" cellpadding="0" border="0" width="100%">
-															<tr>
-																<td width="100%" valign="top">{$short_order_display}</td>
-															</tr>
-															<tr>
-																<td width="100%" valign="top">{$order_display}</td>
-															</tr>
-															<tr>
-																<td width="100%" height="1" valign="top"><img src="site/interface/clear_spacer.gif" height="1"></td>
-															</tr>
-															<tr>
-																<td width="100%" height="1" valign="top" class="resultsDivider"><img src="site/interface/clear_spacer.gif" height="1"></td>
-															</tr>
-															<tr>
-																<td width="100%" align="center" valign="top"><a href="{$order_checkout_link}"><img src="site/interface/order_box_complete_order.gif" border="0"></a></td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<td height="8" class="resultsBoxFooter"><img src="site/interface/clear_spacer.gif" height="8"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								{/if}
-							</table>
-						</td>
-					</tr>
-					<tr><!-- your account table r 1 -->
-						<td height="10" class="infoBoxFooter"><img src="site/interface/clear_spacer.gif" height="10"></td>
-					</tr>
-				</table><!-- end your account table -->
+				<div class="basket">
+					<a class="basketHeader">Basket</a>
+					<div class="basketContent">
+						<div id="basket_info" class="hidden">{$short_order_display}</div>
+						{if $order_display}
+							<div>{$order_display}</div>
+							<a href="{$order_checkout_link}" class="btn basketBtn">Checkout</a>
+						{/if}						
+					</div>
+					<div class="hidden">
+						<span id="account_name" class="yourAccountStore">{$store_name}</span><br>
+						Account: <span id="account_number">{$store_account_number}</span><br>
+						{if $buyer_account}
+							Buyer: <span id="account_buyer">{$buyer_account}</span>
+						{/if}
+					</div>
+				</div>
 			</td>
-		</tr>
-		<tr>
-			<td height="10"><img src="site/interface/clear_spacer.gif" height="10"></td>
-		</tr>
-	{else}
-		<tr><!-- right side table r 3 -->
-			<td align="center">
-				<table width="185" cellpadding="0" cellspacing="0" border="0" class="promoTable"><!-- promo table -->
-					<tr valign="top"><!-- promo table r 1 -->
-						<td class="resultsBoxHeader promoHeaderFooter">
-							<div class="promoTitle">Profit <span class="promoSmall">with the</span><br/>Internet Advantage<div class="promoApplyOuter"><a href="{$apply_link}" class="promoApplyLink"><div class="promoApplyInner">apply<br/>now</div></a></div></div>
-						</td>
-					</tr>
-					<tr valign="top"><!-- promo table r 2 -->
-						<td height="7" class="promoBullet"><img src="site/interface/clear_spacer.gif" height="7"></td>
-					</tr>
-					<tr valign="top"><!-- promo table r 3 -->
-						<td class="promoBullet">
-							&#149;First Look at Daily & Weekly Specials<br/><br/>
-							&#149;Large, Full Color Photographs<br/><br/>
-							&#149;Instantly Sell Entire Product Lines<br/><br/>
-							&#149;Quick, responsive customer service<br/>
-						</td>
-					</tr>
-					<tr valign="top"><!-- promo table r 4 -->
-						<td height="15" class="resultsBoxFooter promoHeaderFooter"><img src="site/interface/clear_spacer.gif" height="15"></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td height="10"><img src="site/interface/clear_spacer.gif" height="10"></td>
 		</tr>
 	{/if}
 	{if $info_pages}
@@ -117,70 +44,8 @@
 				</table><!-- end store info table -->
 			</td>
 		</tr>
-		<tr>
-			<td height="10"><img src="site/interface/clear_spacer.gif" height="10"></td>
-		</tr>
+
 	{/if}
-		<tr><!-- right side table r 3 -->
-			<td align="center">
-				<table width="185" cellpadding="0" cellspacing="0" border="0"><!-- tools table -->
-					<tr><!-- tools table r 1 -->
-						<td height="23" class="infoBoxHeader">Tools</td>
-					</tr>
-					<tr><!-- tools table r 1 -->
-						<td class="infoBoxContent">
-							<table cellpadding="2" border="0">
-								{if !$is_guest}
-									<tr valign="middle">
-										<td width="23" align="center"><a href="{$quick_order_link}" class="tools"><img src="site/interface/tools_quick_order_but.gif" border="0"></a></td>
-										<td><a href="{$quick_order_link}" class="tools">Quick Order Composer</a></td>
-									</tr>
-									<tr valign="middle">
-										<td width="23" align="center"><a href="{$saved_orders_link}"><img src="site/interface/tools_view_saved_but.gif" border="0"></a></td>
-										<td><a href="{$saved_orders_link}" class="tools">View Saved Orders</a></td>
-									</tr>
-									<tr valign="middle">
-										<td width="23" align="center"><a href="{$active_orders_link}"><img src="site/interface/tools_track_active_but.gif" border="0"></a></td>
-										<td><a href="{$active_orders_link}" class="tools">Track Active Orders</a></td>
-									</tr>
-									<tr valign="middle">
-										<td width="23" align="center"><a href="{$advanced_item_search_link}" class="tools"><img src="site/interface/tools_search_but.gif" border="0"></a></td>
-										<td><a href="{$advanced_item_search_link}" class="tools">Advanced Item Search</a></td>
-									</tr>
-								{else}
-									<tr valign="middle">
-										<td width="23" align="center"><a{$guest_alert}><img src="site/interface/tools_quick_order_but.gif" border="0"></a></td>
-										<td><a{$guest_alert} class="tools">Quick Order Composer</a></td>
-									</tr>
-									<tr valign="middle">
-										<td width="23" align="center"><a{$guest_alert}><img src="site/interface/tools_view_saved_but.gif" border="0"></a></td>
-										<td><a{$guest_alert} class="tools">View Saved Orders</a></td>
-									</tr>
-									<tr valign="middle">
-										<td width="23" align="center"><a{$guest_alert}><img src="site/interface/tools_track_active_but.gif" border="0"></a></td>
-										<td><a{$guest_alert} class="tools">Track Active Orders</a></td>
-									</tr>
-									<!--tr valign="middle">
-										<td width="23" align="center"><a{$guest_alert}><img src="site/interface/tools_batch_import_but.gif" border="0"></a></td>
-										<td><a{$guest_alert} class="tools">{$SITE_NAME} InfoSync</a></td>
-									</tr-->
-									<tr valign="middle">
-										<td width="23" align="center"><a href="{$advanced_item_search_link}" class="tools"><img src="site/interface/tools_search_but.gif" border="0"></a></td>
-										<td><a href="{$advanced_item_search_link}" class="tools">Advanced Item Search</a></td>
-									</tr>
-								{/if}
-							</table>
-						</td>
-					</tr>
-					<tr><!-- tools table r 1 -->
-						<td height="10" class="infoBoxFooter"><img src="site/interface/clear_spacer.gif" height="10"></td>
-					</tr>
-				</table><!-- end tools table -->
-			</td>
-		</tr>
-		<tr>
-			<td height="10"><img src="site/interface/clear_spacer.gif" height="10"></td>
-		</tr>
 	{if $enable_translate}
 		<tr><!-- right side table r 4 -->
 			<td align="center">
@@ -234,8 +99,5 @@
 			<td height="10"><img src="site/interface/clear_spacer.gif" height="10"></td>
 		</tr>
 	{/if}
-		<tr>
-			<td align="center"><img src="/img/site/misc/promo_promise_improvement.gif" border="0"></td>
-		</tr>
 
 </table>

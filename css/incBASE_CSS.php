@@ -13,14 +13,14 @@ $baseText = 8;
 ?>
 body 
 {
-	font-family: arial, helvetica, verdana;
+	font-family: arial, helvetica, ver dana;
 	margin: 0px;
 	background: url(/img/site/bg/furley_bg.png);
 	color: black;
 }
 
 body > .wrapper {
-	width: 1100px;
+	width: 960px;
 	margin: 32px auto;
 	background: #fff;
 	padding: 16px;
@@ -48,12 +48,25 @@ a.bold
 	color:<?=PRIMARY_COLOR?>;
 }
 
-/*a:hover 
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	text-decoration:underline; 
-	color:<?=PRIMARY_COLOR?>;
-}*/
+.btn {
+	padding: 4px 5px 5px;
+	border: 1px solid #333;
+	background: #333;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	border-radius: 4px;
+	font-size: 10pt;
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	-ms-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #666;
+}
 
 td 
 {
@@ -240,23 +253,10 @@ td.topRightNav a:hover {color: #111;}
 
 .searchBtn {
 	border: 1px solid #333;
-	background: #333;
-	color: white;
 	border-radius: 0 4px 4px 0;
-	padding: 4px 5px 5px;
 	margin: 0 0 0 -4px;
-	cursor: pointer;
 }
 
-.advancedSearchBtn {
-	font-size: 13px;
-	background: #333;
-	padding: 4px 5px 5px;
-	color: #fff;
-	border-radius: 4px;
-	border: 1px solid #333;
-	text-decoration: none;
-}
 
 /* Info Boxes */
 td.infoBoxHeader
@@ -264,9 +264,10 @@ td.infoBoxHeader
 	color: #FFFFFF;
 	font-size: 10pt;
 	font-weight: bold;
-	background-color: <?=PRIMARY_COLOR?>;
+	background-color: #333;
 	padding-left: 10px;
 	border-radius: 4px 4px 0 0;
+	text-align:center;
 }
 
 td.infoBoxContent
@@ -386,10 +387,6 @@ a.catalogDescriptionLink:hover { color:#000000; }
 	color:<?=PRIMARY_COLOR?>;
 }
 
-.resultsDivider
-{
-	border-top: 1px solid <?=PRIMARY_COLOR?>;
-}
 
 td.resultsBoxHeader
 {
@@ -543,7 +540,14 @@ td.itemCount
 
 td.orderItemList 
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+	font-size: 10pt; 
+	color:#000000;
+}
+
+a.orderListLink 
+{
+	font-size: 10pt; 
+	text-decoration:none; 
 	color:#000000;
 }
 
@@ -562,19 +566,13 @@ a.viewOrder
 	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
 	font-weight:bold; 
 	text-decoration:none; 
-	color:#000000;
+	color:white;
 }
 
 a.viewOrder:hover{ text-decoration:underline;}
 
-a.orderListLink 
-{
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	text-decoration:none; 
-	color:#000000;
-}
 
-a.orderListLink:hover { text-decoration:underline;}
+
 
 a.tools
 {
@@ -1135,24 +1133,24 @@ td.formHeader
 }
 
 /* Tabs */
-td.navTab {
+.navTab {
 	background: #D7D7D7;
 	border: 1px solid #696969;
 	border-bottom: 0px;
 	-moz-border-radius: 10px 10px 0 0;
 	-webkit-border-radius: 10px 10px 0 0;
 	border-radius: 10px 10px 0 0;
-	padding: 0 5px;
+	padding: 5px 8px;
 }
 
-td.navTab a {
+.navTab a {
 	color: #696969;
 	font-size: 9pt;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-td.navTabEnabled {
+.navTabEnabled {
 	background: #FFFFFF;
 	border: 1px solid #000000;
 	border-bottom: 0px;
@@ -1209,4 +1207,54 @@ ol.legalNumberOutline li{ padding-top: 15px}
 
 .cf {
     *zoom: 1;
+}
+
+.basket {
+
+	position: absolute;
+	top: -104px;
+	right: -3px;
+	width: 354px;
+}
+
+.basketHeader {
+	float:right;
+	display:block;
+	background-color: #4e9e45;
+	padding: 5px;
+	text-align:center;
+	vertical-align:middle;
+	color: white;
+	font-size: 10pt;
+	border: 1px solid #000;
+	border-radius: 4px;
+	cursor: pointer;
+	text-decoration: none;
+	min-width: 56px;
+	background-clip: padding-box;
+}
+
+.basketHeader.active {
+	border-radius: 4px 4px 0 0;
+	border-bottom: 0;
+}
+
+.basketContent {
+	clear:both;
+	display:none;
+	padding: 8px;
+	border: 1px solid #000;
+	background-color: #f4fbf3;
+	height:100%;
+	border-radius: 4px 0 4px 4px;
+}
+
+.btn.basketBtn {
+	display: block;
+	margin-top: 16px;
+	background-color: #4e9e45;
+}
+
+.btn.basketBtn:hover {
+	background-color: #4ebc45;
 }

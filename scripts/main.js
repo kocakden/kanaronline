@@ -15,9 +15,28 @@ window.jQuery && (function ($) {
 		}
 	}
 
+	function fixBasket () {
+
+		var basketTxt = $('#basket_info').text().trim();
+
+		basketTxt = basketTxt.length > 0 ? basketTxt : 'Empty';
+
+		$('.basketHeader').click(function () {
+			if (basketTxt != 'Empty') {
+				$('.basketContent').slideToggle('fast', function () {
+					$('.basketHeader').toggleClass('active');
+				});
+			}			
+		}).text(basketTxt)
+
+
+	}
+
 	$(function () {
 
 		getAccountInfo();
+
+		fixBasket();
 
 	});
 

@@ -1,4 +1,4 @@
-<table width="197" cellpadding="0" cellspacing="0" border="0"><!-- right side table -->
+<table width="197" cellpadding="0" cellspacing="0" border="0" style="display:none"><!-- right side table -->
 	<tr><!-- right side table r 1 -->
 		<td align="center">
 			<table width="185" cellpadding="0" cellspacing="0" border="0"><!-- your account table -->
@@ -51,11 +51,5 @@
 				</tr>
 			</table><!-- end your account table -->
 		</td>
-	</tr>
-	<tr>
-		<td height="10"><img src="site/interface/clear_spacer.gif" height="10"></td>
-	</tr>
-	<tr>
-		<td align="center"><img src="site/misc/promo_promise_improvement.gif" border="0"></td>
 	</tr>
 </table><!-- end right side table -->

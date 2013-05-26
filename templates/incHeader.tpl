@@ -46,8 +46,8 @@
 				{if !$hide_search}
 				<form method="post" action="">
 					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
-					<input type="submit" name="navBarSubmitSearch" class="searchBtn" value="Go" /> 
-					<a href="{$search_link}" class="advancedSearchBtn">Advanced</a>
+					<input type="submit" name="navBarSubmitSearch" class="btn searchBtn" value="Go" /> 
+					<a href="{$search_link}" class="btn">Advanced</a>
 					<!-- By {$type_select} in {$department_select} -->
 				</form>
 				{/if}				
@@ -75,6 +75,16 @@
 						{else}
 
 							<a href="{$LINK_STORE}">Home</a>
+							
+							{if !$is_guest}
+							&#149;
+
+							<a href="/order/order.php?quick=1">Quick Order Composer</a>
+
+							&#149;
+
+							<a href="https://www.kanaronline.com/secure/store/orders.php?sid=89085&oid=&c=0">View Orders</a>
+							{/if}
 
 						</td>
 						<td align="right" class="topRightNav">
