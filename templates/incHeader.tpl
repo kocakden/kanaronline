@@ -29,8 +29,8 @@
 <body onLoad="preloadImages();">
 
 	<div class="wrapper">
-
-	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	
+	<table id="header" width="100%" cellspacing="0" cellpadding="0" border="0">
 		
 		<tr style="display:none">
 
@@ -38,9 +38,10 @@
 
 		</tr>
 
-		<tr valign="bottom">
+		<tr>
 
 			<td align="left"><a href="/"><img width src="site/interface/logo_small.png" alt="Kanar Online Logo"></a></td>
+
 			<td align="right" valign="middle">
 				{if !$hide_search}
 				<form method="post" action="">
@@ -49,25 +50,17 @@
 					<a href="{$search_link}" class="advancedSearchBtn">Advanced</a>
 					<!-- By {$type_select} in {$department_select} -->
 				</form>
-				{/if}
-				<br/>
-
-				
+				{/if}				
 			</td>
 			<!--
 			<td>{$banner}</td>
 			-->
 		</tr>
 
-		<tr>
-
-			<td colspan="3" height="1" bgcolor="#000000"><img src="site/interface/clear_spacer.gif" height="1"></td>
-
-		</tr>
 
 		<tr>
 
-			<td colspan="3">
+			<td colspan="3" style="">
 
 			<table cellspacing="3" cellpadding="0" border="0" width="100%" height="35" id="newSearchTable">
 
@@ -83,33 +76,23 @@
 
 							<a href="{$LINK_STORE}">Home</a>
 
-							&#149;
-
-						{if $is_guest}
-
-							<a href="{$apply_link}">Apply</a>
-
-						{else}
-
-							<a href="{$manage_account_link}">Manage Account</a>
-
-						{/if}
-
-							&#149;
-
-							<a href="{$contact_link}">Contact Us</a>
-
-							&#149;
-
-							<a href="javascript: {$help_link}">Help</a>
-						</td>
-						<td align="left" class="topRightNav">
-							<span id="account_info"></span>
 						</td>
 						<td align="right" class="topRightNav">
 							{if $is_guest}
+							<a href="{$apply_link}">Apply</a>
+
+							&#149;
+
 							<a href="{$logout_link}">Log In</a>
 							{else}
+							<span id="account_info"></span>
+
+							&#149;
+
+							<a href="{$manage_account_link}">Account</a>
+
+							&#149;
+
 							<a href="{$logout_link}">Log Out</a>
 							{/if}
 						</td>
@@ -124,11 +107,6 @@
 
 		</tr>
 
-		<tr>
-
-			<td colspan="3" height="1" bgcolor="#000000"><img src="site/interface/clear_spacer.gif" height="1"></td>
-
-		</tr>
 
 		<tr>
 

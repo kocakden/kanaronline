@@ -1,0 +1,328 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"search",
+				"searchTextBox"
+			],
+			[
+				"text-d",
+				"text-decoration"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"proxy",
+				"proxyPRS"
+			],
+			[
+				"remote",
+				"remoteFunction"
+			],
+			[
+				"query",
+				"queryUrl"
+			],
+			[
+				"qu",
+				"queryUrl"
+			],
+			[
+				"rem",
+				"remotePreprocessor"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"funct",
+				"Snippet: Anonymous Function"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"javasc",
+				"Set Syntax: jQuery (JavaScript)"
+			]
+		],
+		"width": 498.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incHeader.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/incBASE_CSS.php",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingLeftSide.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreLeftSide.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreRightSide.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/scripts/main.js",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incFooter.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingRightSide.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/ftpsync.settings",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/welcome.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/logos.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/index.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%8F^8F0^8F0B78F1%%welcome.tpl.php",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%D5^D56^D563F335%%incHeader.tpl.php",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%4A^4A6^4A64EB71%%specialsFlier.tpl.php",
+		"/C/Sublime Text 2.0.1 x64/Data/Packages/FTPSync/FTPSync.sublime-settings",
+		"/C/Sublime Text 2.0.1 x64/Data/Packages/User/FTPSync.sublime-settings",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incWelcomeFooter.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/default.php",
+		"/F/Solr.js/index.html",
+		"/F/Solr.js/scripts/main.js",
+		"/F/Solr.js/lib/typeahead/typeahead_v2.js",
+		"/F/Solr.js/lib/typeahead/typeahead.css",
+		"/C/Users/dogoku/Downloads/pixastic.custom (1).js",
+		"/F/Solr.js/styles/styles.css",
+		"/F/Solr.js/lib/typeahead/typeahead.js",
+		"/F/Solr.js/web-server.js",
+		"/C/Users/dogoku/Downloads/typeahead.js/dist/typeahead.js",
+		"/F/Solr.js/start.bat",
+		"/F/Solr.js/assets/repos.json",
+		"/C/Sublime Text 2.0.1 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/F/Solr.js/assets/countries.json",
+		"/C/Sublime Text 2.0.1 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/F/Solr.js/lib/require.js",
+		"/F/typeahead.js/index.html",
+		"/C/Users/dogoku/Downloads/plunk-DW4rEkFcLKbvuZ7bk5Vw/index.html",
+		"/C/Users/dogoku/Downloads/layerslider-the-parallax-effect-slider/examples/example1.html",
+		"/C/Users/dogoku/Downloads/layerslider-the-parallax-effect-slider/layerslider/js/layerslider.kreaturamedia.jquery.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"clear",
+			"Clearfix",
+			"resultsLabel",
+			"resultsSelect",
+			"selectPriceRange",
+			"formLabelBlue",
+			"width=\"170\"",
+			"<!-- page table r 8 -->",
+			"<input type=\"text\" class=\"loginTextBox\" name=\"userID\" size=\"15\" maxlength=\"8\" value=\"\">",
+			"infoBoxHeader navBoxHeader",
+			"<!-- body -->",
+			"<!-- body table -->",
+			"<html>",
+			"<td width=\"197\" align=\"right\">",
+			"<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"197\">",
+			"<!-- your account table -->",
+			"<!-- your account table r 1 -->",
+			"incStoreRightSide",
+			"<td height=\"23\" class=\"infoBoxHeader\">Your Account</td>",
+			"Your Account",
+			"Your Account\nYour Account",
+			"http://www.kanaronline.com/img/site/interface/logo.png",
+			"fadeInDown",
+			"animation",
+			".join()",
+			"remoteTy",
+			"get: ",
+			"transport.geet",
+			"remoteType",
+			"_processRemoteSuggestions",
+			"_matcher",
+			"_customMatcher",
+			"_processRemoteSuggestions",
+			"this._",
+			" in ",
+			"prefetch",
+			"rawData",
+			".local",
+			"this.local",
+			"get:",
+			"get :",
+			"remotePreprocessor",
+			",\n",
+			"resetDataOnProtocolSwitch",
+			"remoteType",
+			"datasetdef",
+			"remoteType",
+			"get:",
+			"queryUrl",
+			"transportOptions",
+			"Transport",
+			"queryUrl",
+			".get(",
+			".get",
+			"transport.get",
+			"remote",
+			"remote ",
+			".example-twitter-oss",
+			"show",
+			"whitespace"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".jumbotron"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true
+}

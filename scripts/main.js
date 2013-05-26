@@ -1,8 +1,8 @@
-(function ($) {
+window.jQuery && (function ($) {
 
 	function getAccountInfo () {
 
-		var info_html = 'Welcome <b>[account_name]</b> Your Account Number is: <b>[account_number]</b>.',
+		var info_html = 'Welcome [account_name] ([account_number])',
 
 			$name = $('#account_name'),
 			$number = $('#account_number');

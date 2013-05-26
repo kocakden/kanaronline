@@ -1,9 +1,9 @@
 				<td width="170">
-					<table width="170" cellpadding="0" cellspacing="0" border="0"><!-- left side table -->
+					<table width="170" cellpadding="0" cellspacing="0" border="0" style="margin-left:-2px"><!-- left side table -->
 						{if $selected_classID || $selected_inventoryID}
 						<tr>
 							<td align="center">
-								<table width="158" cellpadding="0" cellspacing="0" border="0"><!-- browse depts table -->
+								<table width="170" cellpadding="0" cellspacing="0" border="0"><!-- browse depts table -->
 									<tr><!-- browse categories table r 1 -->
 										<td height="23" class="infoBoxHeader navBoxHeader">Browse Categories</td>
 									</tr>
@@ -79,7 +79,7 @@
 						{/if}
 						<tr>
 							<td align="center">
-								<table width="158" cellpadding="0" cellspacing="0" border="0"><!-- browse depts table -->
+								<table width="170" cellpadding="0" cellspacing="0" border="0"><!-- browse depts table -->
 									<tr><!-- browse depts table r 1 -->
 										<td height="23" class="infoBoxHeader navBoxHeader">Browse Departments</td>
 									</tr>

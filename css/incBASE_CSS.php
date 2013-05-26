@@ -182,7 +182,9 @@ td.tableHeaderOutlineLeftVert { border-left: 1px #333333 solid; }
 /* Header */
 table#newSearchTable
 {
-
+	border: 1px solid #333; 
+	border-left:0; 
+	border-right:0;
 	/*background-color: <?=SEARCH_COLOR?>;*/
 }
 
@@ -264,9 +266,7 @@ td.infoBoxHeader
 	font-weight: bold;
 	background-color: <?=PRIMARY_COLOR?>;
 	padding-left: 10px;
-	-moz-border-radius: 10px 10px 0 0;
-	-webkit-border-radius: 10px 10px 0 0;
-	border-radius: 10px 10px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 
 td.infoBoxContent
@@ -283,9 +283,7 @@ td.infoBoxFooter
 	background-color: <?=PRIMARY_BG_COLOR?>;
 	border: 1px solid <?=PRIMARY_COLOR?>;
 	border-top: 0;
-	-moz-border-radius: 0 0 10px 10px;
-	-webkit-border-radius: 0 0 10px 10px;
-	border-radius: 0 0 10px 10px;
+	border-radius: 0 0 4px 4px;
 }
 
 td.navBoxHeader
@@ -1194,9 +1192,21 @@ ol.legalNumberOutline li{ padding-top: 15px}
 /* Generic CSS */
 .center{text-align: center;}
 
-
-/* Javascript overwrites */
-
 .hidden {
 	display: none;
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
