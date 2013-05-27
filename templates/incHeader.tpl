@@ -44,7 +44,7 @@
 				<form method="post" action="" style="margin-top:16px;">
 					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
 					<button type="submit" name="navBarSubmitSearch" class="btn searchBtn" title="Search">
-						<span class="icon" style="line-height: 1.3;">&#xe001</span>
+						<span class="icon" style="font-size: 16px;">&#xe001</span>
 					</button>
 					<a href="{$search_link}" class="btn">Advanced</a>
 					<!-- By {$type_select} in {$department_select} -->

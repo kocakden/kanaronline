@@ -31,12 +31,16 @@ $baseText = 8;
 
 .icon {
 	font-family: 'icons';
-	speak: none;
+	display: inline-block;
+	vertical-align: text-top;
+	
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	
+	speak: none;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -1421,6 +1425,16 @@ a.orderListLink:hover {
 	text-align: right;
 	padding-right: 16px;
 	width:40px;
+}
+
+.btn.removeBtn {
+	font-size: 16px;
+	padding: 8px;
+	opacity: 0.5;
+}
+
+.basketItem:hover .removeBtn {
+	opacity: 1;
 }
 
 .btn.removeBtn:hover {
