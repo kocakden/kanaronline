@@ -6,7 +6,8 @@
 
 	<title>{$title}</title>
 
-	<script type="text/javascript" src="http://www.musicpayhost.com:8080/jquery/jquery-1.5.2.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 
 	<script type="text/javascript" src="http://www.musicpayhost.com:8080/jquery/jquery.cookie.min.js"></script>
 
@@ -16,11 +17,7 @@
 
 	<script type="text/javascript" src="/includes/js/incTranslate.js"></script>
 
-	<script type="text/javascript">
-
-	translateOnBodyReady('{$TRANSLATOR_API_KEY}');
-
-	</script>
+	<script type="text/javascript">	translateOnBodyReady('{$TRANSLATOR_API_KEY}'); </script>
 
 {/if}
 
@@ -46,7 +43,9 @@
 				{if !$hide_search}
 				<form method="post" action="">
 					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
-					<input type="submit" name="navBarSubmitSearch" class="btn searchBtn" value="Go" /> 
+					<button type="submit" name="navBarSubmitSearch" class="btn searchBtn" title="Search">
+						<span class="icon" style="line-height: 1.3;">&#xe001</span>
+					</button>
 					<a href="{$search_link}" class="btn">Advanced</a>
 					<!-- By {$type_select} in {$department_select} -->
 				</form>

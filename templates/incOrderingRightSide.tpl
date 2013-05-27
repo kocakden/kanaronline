@@ -3,13 +3,29 @@
 		<tr><!-- right side table r 1 -->
 			<td align="center">
 				<div class="basket">
-					<a class="basketHeader">Basket</a>
-					<div class="basketContent">
-						<div id="basket_info" class="hidden">{$short_order_display}</div>
-						{if $order_display}
-							<div>{$order_display}</div>
-							<a href="{$order_checkout_link}" class="btn basketBtn">Checkout</a>
-						{/if}						
+	
+					<a class="basketLink" data-modal="#basketModal" href="{$order_checkout_link}" title="Click to view details">
+						<span class="icon" style="font-size: 16px;">&#xe000</span>
+						<span class='txt'>Basket</span>
+					</a>
+					<div id="basketModal" class="modal">
+						<div class="modalBG"></div>
+						<div id="basketContent" class="modalWindow animated fadeInDown">
+							<div class="modalHeader basketHeader">
+								Your Order Details
+								<span href="#" class="modalClose" title="Close">&times;</span>								
+							</div>
+							<div id="basket_info" class="hidden">{$short_order_display}</div>
+							{if $order_display}
+								<div class="modalContent">
+									{$order_display}
+									<a href="{$order_checkout_link}" class="btn basketBtn">
+										Checkout &nbsp;
+										<span class="icon">&#xe00a;</span>
+									</a>
+								</div>
+							{/if}
+						</div>												
 					</div>
 					<div class="hidden">
 						<span id="account_name" class="yourAccountStore">{$store_name}</span><br>
