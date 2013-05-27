@@ -1306,7 +1306,26 @@ ol.legalNumberOutline li{ padding-top: 15px}
 }
 
 .modalContent {
-	padding: 16px;
+	padding: 16px 0;
+	position: relative;
+}
+
+.modalLoader {
+	display: none;
+	position: absolute;
+	background-image: url(data:image/gif;base64,R0lGODlhKwALAPEAAP///06eRanQpE6eRSH5BAkKAAAAIf4aQ3JlYXRlZCB3aXRoIGFqYXhsb2FkLmluZm8AIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAKwALAAACMoSOCMuW2diD88UKG95W88uF4DaGWFmhZid93pq+pwxnLUnXh8ou+sSz+T64oCAyTBUAACH5BAkKAAAALAAAAAArAAsAAAI9xI4IyyAPYWOxmoTHrHzzmGHe94xkmJifyqFKQ0pwLLgHa82xrekkDrIBZRQab1jyfY7KTtPimixiUsevAAAh+QQJCgAAACwAAAAAKwALAAACPYSOCMswD2FjqZpqW9xv4g8KE7d54XmMpNSgqLoOpgvC60xjNonnyc7p+VKamKw1zDCMR8rp8pksYlKorgAAIfkECQoAAAAsAAAAACsACwAAAkCEjgjLltnYmJS6Bxt+sfq5ZUyoNJ9HHlEqdCfFrqn7DrE2m7Wdj/2y45FkQ13t5itKdshFExC8YCLOEBX6AhQAADs=);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #f4fbf3;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 4px;
+}
+
+.modal.loading .modalLoader{
+	display: block;
 }
 
 /* Basket */
@@ -1314,7 +1333,7 @@ ol.legalNumberOutline li{ padding-top: 15px}
 .basket {
 
 	position: absolute;
-	top: -104px;
+	top: -120px;
 	right: -3px;
 	width: 354px;
 }
@@ -1323,7 +1342,7 @@ ol.legalNumberOutline li{ padding-top: 15px}
 	float:right;
 	display:block;
 	background-color: #4e9e45;
-	padding: 5px 4px;
+	padding: 5px 8px;
 	text-align:center;
 	line-height:20px;
 	color: white;
@@ -1332,23 +1351,41 @@ ol.legalNumberOutline li{ padding-top: 15px}
 	border-radius: 4px;
 	cursor: pointer;
 	text-decoration: none;
+
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
 	background-clip: padding-box;
+
 	text-shadow: 1px 1px 0px #333;
+
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	-ms-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+.basketLink:hover {
+	background-color: #4ebc45;
 }
 
 .basketItem:hover {
-	background-color: #bde2b9;
+	background-color: #bde2b9 !important;
+}
+
+.basketItem:nth-child(odd) {
+	background-color: rgb(224, 243, 222);
 }
 
 .basketImg {
 	text-align: center;
 	vertical-align: middle;
 	width: 60px;
-	border-radius: 4px 0 0 4px;
+	padding-left: 16px;
 }
 
 .basketImg img {
-	width:40px;
+	height:40px;
 	border: 1px solid #ccc;  padding: 5px;  background-color: #fff;
 	margin: 5px;
 }
@@ -1365,83 +1402,25 @@ td.orderItemList:hover {
 
 a.orderListLink 
 {
-	font-size: 10pt; 
+	font-size: 12pt; 
 	text-decoration:none; 
 	color:#000000;
+	margin-left: 16px;
+	display: inline-block;
+	width: 390px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+a.orderListLink:hover {
+	text-decoration: underline;
 }
 
 .basketOptions {
 	text-align: right;
-	border-radius: 0 4px 4px 0;
-	padding-right: 5px;
-	width:50px;
-}
-
-/* Basket */
-
-.basket {
-
-	position: absolute;
-	top: -104px;
-	right: -3px;
-	width: 354px;
-}
-
-.basketLink {
-	float:right;
-	display:block;
-	background-color: #4e9e45;
-	padding: 5px 4px;
-	text-align:center;
-	line-height:20px;
-	color: white;
-	font-size: 10pt;
-	border: 1px solid #000;
-	border-radius: 4px;
-	cursor: pointer;
-	text-decoration: none;
-	background-clip: padding-box;
-	text-shadow: 1px 1px 0px #333;
-}
-
-.basketItem:hover {
-	background-color: #bde2b9;
-}
-
-.basketImg {
-	text-align: center;
-	vertical-align: middle;
-	width: 60px;
-	border-radius: 4px 0 0 4px;
-}
-
-.basketImg img {
+	padding-right: 16px;
 	width:40px;
-	border: 1px solid #ccc;  padding: 5px;  background-color: #fff;
-	margin: 5px;
-}
-
-td.orderItemList 
-{
-	font-size: 10pt; 
-	color:#000000;
-	padding: 8px;
-}
-
-td.orderItemList:hover {
-}
-
-a.orderListLink 
-{
-	font-size: 10pt; 
-	text-decoration:none; 
-	color:#000000;
-}
-
-.basketOptions {
-	text-align: right;
-	border-radius: 0 4px 4px 0;
-	padding-right: 5px;
 }
 
 .btn.removeBtn:hover {
@@ -1450,21 +1429,14 @@ a.orderListLink
 
 .btn.basketBtn {
 	display: block;
+	padding: 8px;
+	width: 200px;
 	margin-top: 16px;
 	background-color: #4e9e45;
+	font-size: 13pt;
 }
 
 .btn.basketBtn:hover, .btn.basketBtn:active{
-	background-color: #4ebc45;
-}
-
-.btn.basketBtn {
-	display: block;
-	margin-top: 16px;
-	background-color: #4e9e45;
-}
-
-.btn.basketBtn:hover {
 	background-color: #4ebc45;
 }
 

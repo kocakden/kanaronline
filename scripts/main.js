@@ -27,7 +27,7 @@ window.jQuery && (function ($) {
 			$('#basketModal').load("/ #basketContent", function () { 
 				updateBasket(); 
 				$(this).prepend("<div class='modalBG'></div>");
-				$('#basketModal').trigger('click');
+				$('.basketLink').trigger('click');
 			});
 		} else {
 			var basketTxt = $('#basket_info').text().trim();
@@ -40,10 +40,23 @@ window.jQuery && (function ($) {
 
 			$rows.each(function () {
 				var $el = $(this);
+				var $item = $el.find('.orderItemList');
 				var itemId = $el.find('.orderListLink')[0].href.split("=")[1];
 
+				//change some text
+				var linkTxt = $item.html()
+					.replace("Qty: ", "&times; ")
+					.replace("|","");
+
+				$item.html(linkTxt);
+
 				//add image
-				var img = ["<td class='basketImg'><img src='/img/inventory/small/",itemId,".jpg'></td>"].join("");
+				var img = [
+					"<td class='basketImg'><img src='/img/inventory/small/",
+					itemId,
+					".jpg'></td>"
+				].join("");
+
 				$el.prepend(img);
 
 				//add remove button
@@ -52,6 +65,7 @@ window.jQuery && (function ($) {
 					itemId,
 					"'>&#xe004;</button></td>"
 				].join("");
+
 				$el.append(removeBtn);
 			});
 

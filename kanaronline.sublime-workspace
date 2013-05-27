@@ -4,6 +4,94 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"item",
+				"itemLink"
+			],
+			[
+				"bask",
+				"basketItem"
+			],
+			[
+				"rem",
+				"removeUrl"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"opa",
+				"opacity"
+			],
+			[
+				"inline-b",
+				"inline-block"
+			],
+			[
+				"bas",
+				"basketItem"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"basket",
+				"basketImg"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"d",
+				"document"
+			],
+			[
+				"tra",
+				"translateX"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"ba",
+				"basket"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"update",
+				"updateBasket"
+			],
+			[
 				"search",
 				"searchTextBox"
 			],
@@ -30,29 +118,94 @@
 			[
 				"qu",
 				"queryUrl"
-			],
-			[
-				"rem",
-				"remotePreprocessor"
-			],
-			[
-				"fun",
-				"function"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "templates/incHeader.tpl",
+			"settings":
+			{
+				"buffer_size": 2850,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/incStoreLeftSide.tpl",
+			"settings":
+			{
+				"buffer_size": 2785,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 3299,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/incOrderingRightSide.tpl",
+			"settings":
+			{
+				"buffer_size": 5732,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n// $Id: incBASE_CSS.php 3609 2012-02-22 21:26:38Z eric $\n\ninclude_once(\"../../global/globalInitClose.php\");\n\ninitCSS();\n\nif ($store)\n	$fontSizeChange = $store->getFontSize();\nelse\n	$fontSizeChange = 0;\n$baseText = 8;\n?>\n\n/******************************************************************************************\n	Icon Set:	IcoMoon - Free -- http://keyamoon.com/icomoon/\n	License:	CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/ \n*******************************************************************************************/\n\n@font-face {\n	font-family: 'icons';\n	src:url('fonts/icons.eot');\n}\n@font-face {\n	font-family: 'icons';\n	src: url(data:application/x-font-woff;charset=utf-8;base64,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) format('woff'),\n		 url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');\n	font-weight: normal;\n	font-style: normal;\n}\n\n.icon {\n	font-family: 'icons';\n	speak: none;\n	font-style: normal;\n	font-weight: normal;\n	font-variant: normal;\n	text-transform: none;\n	line-height: 1;\n	-webkit-font-smoothing: antialiased;\n}\n\n/*\n'cart' : 		'&#xe000;'\n'search' : 		'&#xe001;'\n'remove' : 		'&#xe004;'\n'spinner' : 	'&#xe005;'\n'checkmark' : 	'&#xe006;'\n'close' : 		'&#xe007;'\n'key' : 		'&#xe003;'\n'user' : 		'&#xe002;'\n'enter' : 		'&#xe008;'\n'exit' : 		'&#xe009;'\n'arrow-right' : '&#xe00a;'\n*/\n\n/******************************************************************************************/\n\n\nbody \n{\n	font-family: arial, helvetica, ver dana;\n	margin: 0px;\n	background: url(/img/site/bg/furley_bg.png);\n	color: black;\n}\n\nbody > .wrapper {\n	width: 960px;\n	margin: 32px auto;\n	background: #fff;\n	padding: 16px;\n	border: 1px solid #ccc;\n	border-radius: 8px;\n	box-shadow: 0 0 5px rgba(0,0,0,0.1);\n}\n\nimg{\n	border: 0pt black solid;\n}\n\na \n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	text-decoration:underline; \n	color:<?=PRIMARY_COLOR?>;\n}\n\na.bold \n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	text-decoration:underline; \n	font-weight:bold;\n	color:<?=PRIMARY_COLOR?>;\n}\n\n.btn {\n	padding: 4px 5px 5px;\n	border: 1px solid #333;\n	background: #333;\n	cursor: pointer;\n	text-decoration: none;\n	color: white;\n	border-radius: 4px;\n	font-size: 10pt;\n	-webkit-transition: background-color 0.3s ease;\n	-moz-transition: background-color 0.3s ease;\n	-o-transition: background-color 0.3s ease;\n	-ms-transition: background-color 0.3s ease;\n	transition: background-color 0.3s ease;\n}\n\n.btn:hover {\n	background-color: #666;\n}\n\ntd \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n}\n\n/* Colored curved boxes CSS */\ntable.lightBox\n{\n	background-color: #DA5858;\n}\n\ntable.lightBox td.borderLeft\n{\n	border-left: 1px #C70202 solid;\n}\n\ntable.lightBox td.borderRight\n{\n	border-right: 1px #C70202 solid;\n}\n\ntable.lightBox td.borderBottom\n{\n	border-bottom: 1px #C70202 solid;\n}\n\ntd.footer\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	height: 21px;\n	vertical-align: bottom;\n	text-align: center;\n	color: #999;\n}\n\ntd.footer a {\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color: #999;\n}\n\ntd.footer a:hover {\n	color: #333;\n}\n\n.large\n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;\n}\n\n.pageHeader \n{\n	font-size:<?=$baseText + 4 + $fontSizeChange?>pt; \n	font-weight:bold;\n	border-bottom: 1px black solid;\n}\n\n.pageSubHeader \n{\n	font-size:<?=$baseText + 3 + $fontSizeChange?>pt; \n	font-weight:bold;\n	color:<?=PRIMARY_COLOR?>; \n	border-bottom: 1px <?=PRIMARY_COLOR?> solid;\n}\n\na.subHeader\n{\n	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; \n	text-decoration: none;\n	color:<?=PRIMARY_COLOR?>; \n}\n\na.subHeader:hover\n{\n	color:#000000;\n	text-decoration: underline; \n}\n\n.pageDescription\n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	color:#333333; \n}\n\n.pageDescTip  \n{ \n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	color:<?=PRIMARY_COLOR?>; \n	font-weight:bold;\n}\n\na.pageDescLink \n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	color:<?=PRIMARY_COLOR?>; \n	text-decoration:underline;\n	font-weight:bold;\n}\n\na.pageDescLink:hover { color:#000000; }\n\ntr.tableHeaderOutline \n{\n	background-color:#333333; \n	color:#ffffff; \n	font-family:arial; \n	font-size:<?=$baseText - 2 + $fontSizeChange?>pt; \n} \n\ntd.tableHeaderOutlineLeftVert { border-left: 1px #333333 solid; } \n\n#errorMsg\n{\n	color:#CC6666; \n	font-size: <?=$baseText + 2 + $fontSizeChange?>pt;\n	font-weight: bold;\n}\n\n#successMsg\n{\n	color:<?=PRIMARY_COLOR?>;\n	font-size: <?=$baseText + 2 + $fontSizeChange?>pt;\n	font-weight: bold;\n}\n\n/* Header */\ntable#newSearchTable\n{\n	border: 1px solid #333; \n	border-left:0; \n	border-right:0;\n	/*background-color: <?=SEARCH_COLOR?>;*/\n}\n\ntr#newSearch \n{\n	color: <?=PRIMARY_COLOR?>; \n}\n\ntr#newSearch td {font-size: <?=$baseText + 2 + $fontSizeChange?>pt;}\n\ntd.topRightNav\n{\n	padding:0 5px;\n	color: #696969; \n	font-size: <?=$baseText + 2 + $fontSizeChange?>pt;\n}\n\ntd.topRightNav a \n{\n	color: #696969; \n	text-decoration: none; \n	font-size: <?=$baseText + 2 + $fontSizeChange?>pt; \n	font-weight: bold;\n}\n\ntd.topRightNav a:hover {color: #111;}\n\n.searchSelect \n{  \n	font-size: 12px;\n	color: #333;\n	border: 1px solid #ccc;\n	padding: 5px 6px;\n	border-radius: 4px;\n}\n\n.searchTextBox \n{ \n	font-size: 12px;\n	color: #999;\n	padding: 5px 10px;\n	width: 233px;\n	border-radius: 4px 0 0 4px;\n	border: 1px solid #ccc;\n	-webkit-transition: color 0.3s ease, border-color 0.3s ease;\n}\n\n.searchTextBox:focus {\n	outline: 0;\n	color: #333333;\n	border-color: #333;\n}\n\n.searchBtn {\n	border: 1px solid #333;\n	border-radius: 0 4px 4px 0;\n	margin: 0 0 0 -4px;\n}\n\n\n/* Info Boxes */\ntd.infoBoxHeader\n{\n	color: #FFFFFF;\n	font-size: 10pt;\n	font-weight: bold;\n	background-color: #333;\n	padding-left: 10px;\n	border-radius: 4px 4px 0 0;\n	text-align:center;\n}\n\ntd.infoBoxContent\n{\n	background-color: <?=PRIMARY_BG_COLOR?>;\n	padding-left: 8px;\n	padding-right: 8px;\n	border-left: 1px solid <?=PRIMARY_COLOR?>;\n	border-right: 1px solid <?=PRIMARY_COLOR?>;\n}\n\ntd.infoBoxFooter\n{\n	background-color: <?=PRIMARY_BG_COLOR?>;\n	border: 1px solid <?=PRIMARY_COLOR?>;\n	border-top: 0;\n	border-radius: 0 0 4px 4px;\n}\n\ntd.navBoxHeader\n{\n	background-color: <?=NAV_COLOR?>;\n}\n\ntd.navBoxContent\n{\n	background-color: <?=NAV_BG_COLOR?>;\n	border-color: <?=NAV_COLOR?>;\n}\n\ntd.navBoxFooter\n{\n	background-color: <?=NAV_BG_COLOR?>;\n	border-color: <?=NAV_COLOR?>;\n}\n\n/* Left Include */\na.listDepartmentLink \n{ \n	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; \n	font-weight:bold; \n	color:#000000; \n	text-decoration:none;\n}\n\na.listDepartmentLink:hover \n{ \n	color:<?=PRIMARY_COLOR?>;\n	text-decoration:none;\n}\n\na.listCatalogLink \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	text-decoration:none; \n	color: #696969;\n	font-weight: bold;\n}\n\na.listCatalogLink:hover { color:<?=PRIMARY_COLOR?>;}\n\na.listHeadlineLink \n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color: black; \n	text-decoration: none;\n}\n\na.advancedSearch \n{ \n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	font-weight:bold; \n	text-decoration:none; \n	color:#333333;\n}\n\na.advancedSearch:hover { color:<?=PRIMARY_COLOR?>;}\n\n/* Inventory Pages */\na.location \n{ \n	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; \n	text-decoration:none;\n	font-weight:bold; \n	color:#000000;\n}\n\na.location:hover { color:<?=PRIMARY_COLOR?>;}\n\na.catalogInvoiceLine \n{ \n	font-size:<?=$baseText + 3 + $fontSizeChange?>pt; \n	font-weight:bold; text-decoration:none; \n	color:#000000;\n}\n\na.catalogInvoiceLine:hover \n{ \n	text-decoration:none; \n	color:<?=PRIMARY_COLOR?>; \n}\n\na.catalogDescriptionLink \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold; \n	text-decoration:underline; \n	color:<?=PRIMARY_COLOR?>;\n}\n\na.catalogDescriptionLink:hover { color:#000000; }\n\n.catalogModel\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold; \n	color:<?=PRIMARY_COLOR?>;\n}\n\n\ntd.resultsBoxHeader\n{\n	background-color: <?=SECONDARY_BG_COLOR?>;\n	border: 1px solid <?=PRIMARY_COLOR?>;\n	border-bottom: 0;\n	-moz-border-radius: 10px 10px 0 0;\n	-webkit-border-radius: 10px 10px 0 0;\n	border-radius: 10px 10px 0 0;\n}\n\ntd.resultsBoxContent\n{\n	background-color: <?=SECONDARY_BG_COLOR?>;\n	padding-left: 8px;\n	padding-right: 8px;\n	border-left: 1px solid <?=PRIMARY_COLOR?>;\n	border-right: 1px solid <?=PRIMARY_COLOR?>;\n}\n\ntd.resultsBoxFooter\n{\n	background-color: <?=SECONDARY_BG_COLOR?>;\n	border: 1px solid <?=PRIMARY_COLOR?>;\n	border-top: 0;\n	-moz-border-radius: 0 0 10px 10px;\n	-webkit-border-radius: 0 0 10px 10px;\n	border-radius: 0 0 10px 10px;\n}\n\n/*.catalogAttribute { border-bottom: 1px <?=PRIMARY_COLOR?> dotted; }*/\ntr.priceTableOnDiscount\n{ \n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	font-weight:bold;\n	color:#000000; \n	background-color:#C8D96B;\n}\n\ntr.priceTableList\n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#696969; \n	background-color:#ffffff;\n}\n\ntd.regPriceTableLabel\n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#333333;\n	background-color:#ffffff;\n}\n\ntd.regPriceTableValue\n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#333333;\n	background-color:#ffffff;\n}\n\ntd.endColumnTableLabel\n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#000000; \n	background-color:#ffffff;\n}\n\ntd.endColumnTableValue\n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight: bold; \n	color:#000000;\n	background-color:#ffffff;\n}\n\n/*\ntr.priceTableBlue \n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight: bold; \n	color:<?=PRIMARY_COLOR?>;\n	background-color:#ffffff;\n}\n\ntr.priceTableRed \n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#CC6666; \n	background-color:#ffffff;\n}\n\n*/\ntd.listDepartment \n{ \n	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; \n	font-weight:bold; \n	color:<?=PRIMARY_COLOR?>;\n}\n\ntd.listHeadline \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold; \n	padding-top: 2px; \n	color:#000000;\n}\n\ntd.listCatalog \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold; \n	color:#696969;\n}\n\ntd.locationNoLink\n{\n	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; \n	font-weight:bold;\n	color:#696969;\n}\n\ntd.catalogDescription {font-size:<?=$baseText + $fontSizeChange?>pt;}\n\ntd.catalogAttributeDescription \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#696969; \n	font-weight:bold;\n}\n\n.moreArrow \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:<?=PRIMARY_COLOR?>; \n	font-weight:bold;\n}\n\ntd.qty \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold; \n	color:#696969;\n}\n\ntd.itemCount \n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	color:<?=PRIMARY_COLOR?>; \n	font-weight:bold;\n}\n\n.qtyField \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	text-align:center;\n	color:<?=PRIMARY_COLOR?>; \n	font-weight:bold; \n	border: 1px #000000 solid; \n}\n\n/* Right Include */\na.viewOrder\n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	font-weight:bold; \n	text-decoration:none; \n	color:white;\n}\n\na.viewOrder:hover{ text-decoration:underline;}\n\n\n\n\na.tools\n{\n	font-size:12px; \n	text-decoration:none;\n	color:#000000;\n}\n\na.tools:hover { text-decoration:underline;}\n\n.yourAccountStore \n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	font-weight:bold;\n}\n\ntable.promoTable\n{\n	margin-top: 27px;\n}\n\ntd.promoHeaderFooter\n{\n	background-color: #F0F0F0;\n	border-color: #000000;\n}\n\ntd.promoBullet\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:<?=PRIMARY_COLOR?>;\n	font-weight:bold;\n	background-color: #F0F0F0;\n	padding-left: 5px;\n	padding-right: 5px;\n	border-left: 1px solid #000000;\n	border-right: 1px solid #000000;\n}\n\ndiv.promoTitle\n{\n	position: relative;\n	font-size: 15pt;\n	padding-left: 7px;\n}\n\nspan.promoSmall\n{\n	font-size: 11pt;\n}\n\ndiv.promoApplyOuter\n{\n	position: absolute;\n	top: -28px;\n	right: 8px;\n	width: 52px;\n	height: 52px;\n	background-color: #C8D96B;\n	border: 1px solid #000000;\n	-moz-border-radius: 27px;\n	-webkit-border-radius: 27px;\n	border-radius: 27px;\n}\n\ndiv.promoApplyInner\n{\n	padding: 9px 0;\n	text-align: center;\n}\n\na.promoApplyLink\n{\n	text-decoration: none;\n	font-size: 11pt;\n	color: #000000;\n}\n\n/* Product.php */\ntd.detailInvoiceLine \n{\n	font-size:<?=$baseText + 3 + $fontSizeChange?>pt;\n	font-weight:bold;\n	color:<?=PRIMARY_COLOR?>;\n}\n\ntd.slaveTableMsg \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold; \n	color:<?=PRIMARY_COLOR?>;\n}\n\ntd.slaveTableHeader \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	/*font-weight: bold; */\n	color:#696969; \n	background-color:#ffffff;\n}\n\ntd.slaveTableQty \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:<?=PRIMARY_COLOR?>; \n	background-color:#ffffff;\n}\n\ntd.slaveTableReg \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#000000; \n	background-color:#ffffff;\n}\n\ntd.slaveTableList \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#696969; \n	background-color:#ffffff;\n}\n\ntd.slaveTableRegPrice \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#333333;\n	background-color:#ffffff;\n}\n\ntd.slaveTableEndColumn \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold; color:#000000;  \n	background-color:#ffffff;\n}\n\ntable.notes\n{\n	border-left: 1px black solid; \n	border-top: 1px black solid;\n}\n\ntable.notes td\n{\n	border-right: 1px black solid; \n	border-bottom: 1px black solid;\n}\n\n/* Paging */\na.newSearch\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	text-decoration:none;\n	font-weight:bold;  \n	color:<?=PRIMARY_COLOR?>;\n}\n\na.newSearch:hover { text-decoration:underline;}\n\na.viewMode \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold; \n	text-decoration:none; \n	color:<?=PRIMARY_COLOR?>;\n}\n\na.viewMode:hover { text-decoration:underline;}\n\na.pagingBold\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold; \n	text-decoration:none; \n	color:<?=PRIMARY_COLOR?>;\n}\n\na.pagingBold:hover { color:#000000;}\n\na.pagingPageLink\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold; \n	text-decoration:underline; \n	color:<?=PRIMARY_COLOR?>;\n}\n\na.pagingPageLink:hover { color:#000000; }\n\n.pagingPageNoLink\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold; \n}\n\n.pagingInactive\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color:#696969;\n}\n\ntd.numResultsFound \n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	font-weight:bold; \n	color:#000000;\n}\n\ntd.resultsLabel \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#000000;\n}\n\ntd.paging \n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; \n	color:#000000;\n}\n\nselect.resultsSelect \n{\n	font-family:arial; \n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	font-weight:bold;\n	border-style:solid; \n	border-width:1px; \n	background-color:#ffffff; \n	color:<?=PRIMARY_COLOR?>;\n}\n\n/* Complete Order Pages */\ntd.completeOrderActive \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#CC6666; \n	font-weight:bold;\n}\n\ntd.completeOrderFuture \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt; \n	color:#000000;\n}\n\ntd.completeOrderMsg \n{\n	font-size:13px; \n	font-weight:bold; \n	color:#000000;\n}\n\nspan#step \n{\n	font-size: 13px; \n	font-weight: bold; \n	color: black;\n}\n\ntable.tableForm {border-top: 1px black solid;}\n\ntable.tableForm td \n{\n	font-size: <?=$baseText + $fontSizeChange?>pt; \n	padding: 5px;\n}\n\ntable.tableForm td.leftCell\n{ \n	border-bottom: 1px black solid; \n	border-left: 1px black solid; \n	background-color: #696969; \n	color: white; \n	font-weight: bold; \n	border-right: 1px black solid;\n}\n\ntable.tableForm td.rightCell\n{ \n	border-bottom: 1px black solid; \n	border-right: 1px black solid; \n	background-color: #DDDDDD;\n}\n\n.seperator {border-top: 2px black solid;}\n\ntable.tableForm td.sectionTitle\n{ \n	background-color: black; \n	color: white; \n	font-weight: bold;\n}\n\ntable.tableForm td.white\n{ \n	border: 1px black solid; \n	border-top: 0pt white solid; \n	color: black;\n}\n\ntd#weightCost\n{ \n	background-color: <?=PRIMARY_COLOR?>; \n	color: white;\n}\n\ninput.textInput { border: 1px black solid;}\n\nselect.selectInput { border: 1px black solid;}\n\na.orderProgressLink \n{\n	font-size:12px; \n	text-decoration:none; \n	font-weight:bold; \n	color:<?=PRIMARY_COLOR?>;\n}\n\na.orderProgressLink:hover { text-decoration:underline;}\n\n.orderProgress \n{ \n	font-size:12px; \n	text-decoration:none; \n	font-weight:bold; \n	color:#696969;\n}\n\n.summaryPo \n{ \n	font-size:12px; \n	text-decoration:none;\n	font-weight:bold;\n	color:#ffffff;\n}\n\n.orderSummary \n{ \n	font-size:12px;\n	text-decoration:none;\n	color:#000000;\n}\n\n.orderSummaryHeader\n{\n	position: relative;\n	padding-top: 3px;\n}\n\n.orderSummaryHeaderImg\n{\n	position: absolute;\n	top: 1px;\n	right: 2px;\n}\n\n.orderSummarySubHeader\n{\n	color: #FFFFFF;\n	font-size: 10pt;\n	background: <?=PRIMARY_COLOR?> no-repeat 95% 100%;\n	padding-left: 10px;\n}\n\n.orderSummarySubHeaderProgress\n{\n	background-image: url(<?=IMGDIR_INTERFACE?>arrow.png);\n}\n\n.orderSummarySubHeaderSecure\n{\n	background-image: url(<?=IMGDIR_INTERFACE?>lock.png);\n}\n\n.shipRate \n{ \n	font-size:12px;\n	font-weight:bold;\n	color:#000000;\n}\n\n.commitOrderSubTotalLabel \n{ \n	font-weight:bold;\n	color:#ffffff;\n	border-right: 1px black solid;\n	border-bottom: 1px black solid;\n	background-color:#000000;\n}\n\n.commitOrderSubTotal \n{\n	font-weight:bold;\n	color:#000000;\n	border-bottom: 1px black solid;\n	border-left: 1px black solid;\n	border-right: 1px black solid;\n} \n.commitOrderShipTotalLabel \n{ \n	font-weight:bold; \n	color:#ffffff; \n	border-right: 1px black solid; \n	border-bottom: 1px white solid; \n	background-color:#000000; \n}\n\n.commitOrderShipTotal \n{\n	color:#000000; \n	border-bottom: 1px black solid; \n	border-left: 1px black solid; \n	border-right: 1px black solid;\n} \n.commitOrderTotalLabel \n{\n	font-weight:bold;\n	color:#ffffff;\n	border-right: 1px black solid;\n	background-color:#000000;\n}\n\n.commitOrderTotal\n{\n	color:#000000;\n	font-weight:bold;\n	border-bottom: 1px black solid;\n	border-left: 1px black solid;\n	border-right: 1px black solid;\n} \n/* Order.php */\na.orderRecordLink \n{ \n	color: black;\n	text-decoration: none\n}\n\na.orderRecordLink:hover { text-decoration: underline;}\n\ntr.orderRow {font-size: 15pt;}\n\ntr.orderHeader \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold; color:#ffffff;\n	background-color:#000000;\n}\n\ntd.orderStd \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color:#000000;\n	background-color:#DDDDDD;\n	border-bottom: 1px black solid;\n}\n\ntd.leftCorner\n{\n	border-left: 1px black solid;\n	border-bottom: 1px black solid;\n}\n\ntd.orderTotal \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold;\n	color:<?=PRIMARY_COLOR?>;\n	background-color:#ffffff;\n	border: 1px black solid;\n	border-top: 0pt black solid;\n}\n\ntd.orderSubTotalLabel \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold;\n	color:#ffffff;\n	background-color:#000000;\n	border: 1px black solid;\n	border-right: 0pt black solid;\n	border-top: 0pt black solid;\n}\n\ntd.orderSubTotal \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	font-weight:bold;\n	color:#000000;\n	background-color:#ffffff;\n	border: 1px black solid;\n	border-top: 0pt black solid;\n}	\ntd.crossSellTitle\n{\n	background-color: <?=PRIMARY_COLOR?>;\n	color: white;\n	border: 1px black solid;\n	border-top: 0pt black solid;\n	border-right: 0pt black solid;\n}\n\ntd.crossSellStd \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color:#000000;\n	border-bottom: 1px black solid;\n}\n\ntd.crossSellRight {border-left: 1px black solid;}\n\n/* Forms */\ntd.formLabel \n{ \n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;\n	color:#696969; font-weight:bold;\n}\n\ntd.formLabelBlue\n{\n	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;\n	color:<?=PRIMARY_COLOR?>; font-weight:bold;\n}\n\ntd.formHeader \n{ \n	font-size:<?=$baseText + 3 + $fontSizeChange?>pt;\n	color:<?=PRIMARY_COLOR?>;\n	font-weight:bold;\n	border-bottom: 1px <?=PRIMARY_COLOR?> solid; \n}\n\n.formInputSide\n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color:#696969; \n}\n\n.formTextBox \n{\n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color:<?=PRIMARY_COLOR?>;\n	font-weight:bold;\n	border: 1px #000000 solid;\n}\n\n.formSelect \n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color:<?=PRIMARY_COLOR?>; \n	font-weight:bold;\n}\n\n.formSubmit \n{ \n	font-size:<?=$baseText + $fontSizeChange?>pt;\n	color:<?=PRIMARY_COLOR?>; \n	font-weight:bold;\n}\n\n/* Tabs */\n.navTab {\n	background: #D7D7D7;\n	border: 1px solid #696969;\n	border-bottom: 0px;\n	-moz-border-radius: 10px 10px 0 0;\n	-webkit-border-radius: 10px 10px 0 0;\n	border-radius: 10px 10px 0 0;\n	padding: 5px 8px;\n}\n\n.navTab a {\n	color: #696969;\n	font-size: 9pt;\n	font-weight: bold;\n	text-decoration: none;\n}\n\n.navTabEnabled {\n	background: #FFFFFF;\n	border: 1px solid #000000;\n	border-bottom: 0px;\n	-moz-border-radius: 10px 10px 0 0;\n	-webkit-border-radius: 10px 10px 0 0;\n	border-radius: 10px 10px 0 0;\n	padding: 0 5px;\n\n	color: #000000;\n	font-size: 9pt;\n	font-weight: bold;\n	text-decoration: none;\n}\n\n/* Apply Pages */\n.applyMsgHeader\n{\n	font-size:10pt;\n	color:<?=PRIMARY_COLOR?>; \n	font-weight:bold;\n}\n\n.applyMsg\n{\n	padding:8px;\n}\n\n/* Legal Page */\np.bold\n{ \n	font-weight: bold; \n	font-size: 8pt\n}\n\nol.legalNumberOutline li{ padding-top: 15px}\n\n/* Generic CSS */\n.center{text-align: center;}\n\n.hidden {\n	display: none;\n}\n\n/* Clearfix */\n.cf:before,\n.cf:after {\n    content: \" \"; \n    display: table; \n}\n\n.cf:after {\n    clear: both;\n}\n\n.cf {\n    *zoom: 1;\n}\n\n/* Modal window */\n\n.modal {\n	display:none;\n	\n	position: fixed;\n	z-index: 10;\n	top: 0;\n	left: 0;\n\n	height:100%;\n	width: 100%;\n\n	-webkit-transform: translate3d(0,0,0,);\n}\n\n.active.modal {\n	display: block;\n}\n\n.modalBG {\n	position: absolute;\n	top:0;\n	left: 0;\n	width:100%;\n	height: 100%;\n	background-color: #fff; /* ie fallback */ \n	background-color: rgba(255,255,255,0.8);\n	z-index: 10;\n}\n\n.modalWindow {\n	position: relative;\n	z-index: 12;\n\n	width: 600px;\n	margin: 160px auto 0;\n\n	background-color: #f4fbf3;\n	border: 1px solid #333;\n	border-radius: 4px;\n	background-clip: padding-box;\n\n	box-shadow: 0px 0px 15px rgba(0,0,0,0.3);\n}\n\n.modalHeader {\n	background-color: #4e9e45;\n	padding: 5px;\n	color: white;\n	font-size: 13pt;\n	border-radius: 4px 4px 0 0;\n	text-align: center;\n}\n\n.modalClose {\n	font-size: 24px;\n	float: right;\n	cursor: pointer;\n	display: block;\n	margin-top: -2px;\n}\n\n.modalContent {\n	padding: 16px;\n	position: relative;\n}\n\n.modalLoader {\n	display: none;\n	position: absolute;\n	background: #f4fbf3 url();\n	width: 100%;\n	height: 100%;\n	top: 0;\n	left: 0;\n	border-radius: 4px;\n}\n\n.modal.loading .modalLoader{\n	display: block;\n}\n\n/* Basket */\n\n.basket {\n\n	position: absolute;\n	top: -104px;\n	right: -3px;\n	width: 354px;\n}\n\n.basketLink {\n	float:right;\n	display:block;\n	background-color: #4e9e45;\n	padding: 5px 4px;\n	text-align:center;\n	line-height:20px;\n	color: white;\n	font-size: 10pt;\n	border: 1px solid #000;\n	border-radius: 4px;\n	cursor: pointer;\n	text-decoration: none;\n	background-clip: padding-box;\n	text-shadow: 1px 1px 0px #333;\n}\n\n.basketItem:hover {\n	background-color: #bde2b9;\n}\n\n.basketImg {\n	text-align: center;\n	vertical-align: middle;\n	width: 60px;\n	border-radius: 4px 0 0 4px;\n}\n\n.basketImg img {\n	height:40px;\n	border: 1px solid #ccc;  padding: 5px;  background-color: #fff;\n	margin: 5px;\n}\n\ntd.orderItemList \n{\n	font-size: 10pt; \n	color:#000000;\n	padding: 8px;\n}\n\ntd.orderItemList:hover {\n}\n\na.orderListLink \n{\n	font-size: 12pt; \n	text-decoration:none; \n	color:#000000;\n	margin-left: 16px;\n	display: inline-block;\n	width: 390px;\n	overflow: hidden;\n	white-space: nowrap;\n	text-overflow: ellipsis;\n}\n\na.orderListLink:hover {\n	text-decoration: underline;\n}\n\n.basketOptions {\n	text-align: right;\n	border-radius: 0 4px 4px 0;\n	padding-right: 5px;\n	width:40px;\n}\n\n.btn.removeBtn:hover {\n	background-color: #f44;\n}\n\n.btn.basketBtn {\n	display: block;\n	padding: 8px;\n	width: 200px;\n	margin-top: 16px;\n	background-color: #4e9e45;\n	font-size: 13pt;\n}\n\n.btn.basketBtn:hover, .btn.basketBtn:active{\n	background-color: #4ebc45;\n}\n\n/* Animations */\n\n.animated{\n	-webkit-animation-fill-mode:both;\n	-moz-animation-fill-mode:both;\n	-ms-animation-fill-mode:both;\n	-o-animation-fill-mode:both;\n	animation-fill-mode:both;\n\n	-webkit-animation-duration: 0.6s;\n	-moz-animation-duration:0.6s;\n	-ms-animation-duration:0.6s;\n	-o-animation-duration:0.6s;\n	animation-duration:0.6s;}\n\n\n@-moz-keyframes shake {\n	0%, 100% {-moz-transform: translateX(0);}\n	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}\n	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}\n}\n\n@-o-keyframes shake {\n	0%, 100% {-o-transform: translateX(0);}\n	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}\n	20%, 40%, 60%, 80% {-o-transform: translateX(10px);}\n}\n\n@keyframes shake {\n	0%, 100% {transform: translateX(0);}\n	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}\n	20%, 40%, 60%, 80% {transform: translateX(10px);}\n}\n\n.shake {\n	-webkit-animation-name: shake;\n	-moz-animation-name: shake;\n	-o-animation-name: shake;\n	animation-name: shake;\n}\n@-webkit-keyframes fadeInDown {\n	0% {\n		opacity: 0;\n		-webkit-transform: translateY(-20px);\n	}\n	\n	100% {\n		opacity: 1;\n		-webkit-transform: translateY(0);\n	}\n}\n\n@-moz-keyframes fadeInDown {\n	0% {\n		opacity: 0;\n		-moz-transform: translateY(-20px);\n	}\n	\n	100% {\n		opacity: 1;\n		-moz-transform: translateY(0);\n	}\n}\n\n@-o-keyframes fadeInDown {\n	0% {\n		opacity: 0;\n		-o-transform: translateY(-20px);\n	}\n	\n	100% {\n		opacity: 1;\n		-o-transform: translateY(0);\n	}\n}\n\n@keyframes fadeInDown {\n	0% {\n		opacity: 0;\n		transform: translateY(-20px);\n	}\n	\n	100% {\n		opacity: 1;\n		transform: translateY(0);\n	}\n}\n\n.fadeInDown {\n	-webkit-animation-name: fadeInDown;\n	-moz-animation-name: fadeInDown;\n	-o-animation-name: fadeInDown;\n	animation-name: fadeInDown;\n}\n@-webkit-keyframes fadeOut {\n	0% {\n		opacity: 1;\n	}\n	\n	100% {\n		opacity: 0;\n	}\n}\n@-moz-keyframes fadeOut {\n	0% {\n		opacity: 1;\n	}\n	\n	100% {\n		opacity: 0;\n	}\n}\n@-o-keyframes fadeOut {\n	0% {\n		opacity: 1;\n	}\n	\n	100% {\n		opacity: 0;\n	}\n}\n@keyframes fadeOut {\n	0% {\n		opacity: 1;\n	}\n	\n	100% {\n		opacity: 0;\n	}\n}\n\n.fadeOut {\n	-webkit-animation-name: fadeOut;\n	-moz-animation-name: fadeOut;\n	-o-animation-name: fadeOut;\n	animation-name: fadeOut;\n}\n\n",
+			"file": "css/incBASE_CSS.php",
+			"file_size": 34125,
+			"file_write_time": 130141466904264557,
+			"settings":
+			{
+				"buffer_size": 32571,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 56 files for \"td.orderItemList\"\n\nC:\\Users\\dogoku\\Documents\\GitHub\\kanaronline\\css\\incADMIN_CSS.php:\n 1577  }\n 1578  \n 1579: td.orderItemList\n 1580  {\n 1581  	font-size: 10px;\n\nC:\\Users\\dogoku\\Documents\\GitHub\\kanaronline\\css\\incBASE_CSS.php:\n  585  }\n  586  \n  587: td.orderItemList \n  588  {\n  589  	font-size: 10pt; \n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
 	],
-	"build_system": "",
+	"build_system": "Packages/JSHint/JSHint.sublime-build",
 	"command_palette":
 	{
 		"height": 375.0,
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"css",
 				"Set Syntax: CSS"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"prefix",
+				"Preferences: Prefixr Key Bindings – Default"
 			],
 			[
 				"Package Control: in",
@@ -69,10 +222,6 @@
 			[
 				"list",
 				"Package Control: List Packages"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"html",
@@ -111,7 +260,7 @@
 				"Set Syntax: jQuery (JavaScript)"
 			]
 		],
-		"width": 498.0
+		"width": 450.0
 	},
 	"console":
 	{
@@ -128,18 +277,23 @@
 	},
 	"file_history":
 	[
+		"/C/Users/dogoku/Downloads/icons39119/icons39119/lte-ie7.js",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/icons.css",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingLeftSide.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%AB^AB9^AB9B7DE4%%incStoreRightSide.tpl.php",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%22^227^22775E75%%incOrderingRightSide.tpl.php",
+		"/C/Sublime Text 2.0.1 x64/Data/Packages/Prefixr/Default (Windows).sublime-keymap",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreRightSide.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/index.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incHeader.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/incBASE_CSS.php",
-		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingLeftSide.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreLeftSide.tpl",
-		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreRightSide.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/scripts/main.js",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incFooter.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingRightSide.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/ftpsync.settings",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/welcome.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/logos.tpl",
-		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/index.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%8F^8F0^8F0B78F1%%welcome.tpl.php",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%D5^D56^D563F335%%incHeader.tpl.php",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%4A^4A6^4A64EB71%%specialsFlier.tpl.php",
@@ -184,6 +338,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fadeOutUp",
+			"td.orderItemList",
+			"basketHeader",
+			"basketHe",
+			"icon-",
+			",",
+			"{",
+			"before",
+			".icon-",
+			"fixBasket",
+			"quick_order ",
+			"orderListLink",
+			"Click for Larger Image",
+			"viewOrder",
+			"all",
+			"class='navTab",
+			"class=\"navTab\"",
+			"kokos",
 			"clear",
 			"Clearfix",
 			"resultsLabel",
@@ -262,14 +434,551 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "templates/incHeader.tpl",
+					"settings":
+					{
+						"buffer_size": 2850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1348,
+								1348
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/incStoreLeftSide.tpl",
+					"settings":
+					{
+						"buffer_size": 2785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts/main.js",
+					"settings":
+					{
+						"buffer_size": 3299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1217,
+								1217
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": false,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/incOrderingRightSide.tpl",
+					"settings":
+					{
+						"buffer_size": 5732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								890,
+								890
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/incBASE_CSS.php",
+					"settings":
+					{
+						"buffer_size": 32571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28858,
+								28858
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 18796.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										134,
+										150
+									],
+									[
+										276,
+										292
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								242,
+								242
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -298,6 +1007,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
 	"replace":
 	{
 		"height": 64.0

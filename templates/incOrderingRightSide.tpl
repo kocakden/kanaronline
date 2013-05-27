@@ -19,10 +19,7 @@
 							{if $order_display}
 								<div class="modalContent">
 									{$order_display}
-									<a href="{$order_checkout_link}" class="btn basketBtn">
-										Checkout &nbsp;
-										<span class="icon">&#xe00a;</span>
-									</a>
+									<a href="{$order_checkout_link}" class="btn basketBtn">Checkout</a>
 								</div>
 							{/if}
 						</div>												

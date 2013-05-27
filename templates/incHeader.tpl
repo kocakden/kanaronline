@@ -37,11 +37,11 @@
 
 		<tr>
 
-			<td align="left"><a href="/"><img width src="site/interface/logo_small.png" alt="Kanar Online Logo"></a></td>
+			<td align="left"><a href="/"><img width="280" height="113" src="site/interface/logo_small.png" alt="Kanar Online Logo"></a></td>
 
-			<td align="right" valign="middle">
+			<td align="right" valign="top">
 				{if !$hide_search}
-				<form method="post" action="">
+				<form method="post" action="" style="margin-top:16px;">
 					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
 					<button type="submit" name="navBarSubmitSearch" class="btn searchBtn" title="Search">
 						<span class="icon" style="line-height: 1.3;">&#xe001</span>
