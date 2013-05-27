@@ -19,7 +19,7 @@
 							<div class="modalContent">
 								{if $order_display}
 									{$order_display}
-									<a href="{$order_checkout_link}" class="btn basketBtn">Checkout</a>
+									<a href="{$order_checkout_link}" class="btn basketBtn">Complete Order</a>
 								{else}
 									<div class="modalMessage">You have no items in your order</div>
 								{/if}
