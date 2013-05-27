@@ -6,7 +6,7 @@
 	
 					<a class="basketLink" data-modal="#basketModal" href="{$order_checkout_link}" title="Click to view details">
 						<span class="icon" style="font-size: 16px;">&#xe000</span>
-						<span class='txt'>Basket</span>
+						<span class='txt'></span>
 					</a>
 					<div id="basketModal" class="modal">
 						<div class="modalBG"></div>
@@ -16,12 +16,16 @@
 								<span href="#" class="modalClose" title="Close">&times;</span>								
 							</div>
 							<div id="basket_info" class="hidden">{$short_order_display}</div>
-							{if $order_display}
-								<div class="modalContent">
+							<div class="modalContent">
+								{if $order_display}
 									{$order_display}
 									<a href="{$order_checkout_link}" class="btn basketBtn">Checkout</a>
-								</div>
-							{/if}
+								{else}
+									<div class="modalMessage">You have no items in your order</div>
+								{/if}
+								<div class="modalLoader"></div>
+							</div>
+
 						</div>												
 					</div>
 					<div class="hidden">

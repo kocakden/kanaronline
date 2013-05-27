@@ -72,6 +72,8 @@ window.jQuery && (function ($) {
 			$tbl.find('tr').not('[valign]').remove();
 
 			$basketModal.prepend($tbl);
+
+			$('#basketModal').removeClass("loading");
 		}
 
 	}
@@ -81,10 +83,6 @@ window.jQuery && (function ($) {
 
 		var removeUrl = '/order/order.php';
 
-		$('.basketLink').on('click',function (e) {
-			($('#basket_info').text().trim() === '') && e.stopPropagation();
-		});
-
 		$('.basket').on('click', '.removeBtn', function (e) {
 			e.preventDefault();
 			var $btn = $(this);
@@ -92,11 +90,9 @@ window.jQuery && (function ($) {
 			var remData = {
 				"removeInventoryID": $btn.data('itemid')
 			}
-			$.post(removeUrl, remData, function (argument) {
-				$btn.closest('.basketItem').addClass('animated fadeOut');
-				setTimeout(function () { $btn.closest('.basketItem').remove(); }, 500)
-
-			})						
+			
+			$btn.closest("modal").addClass("loading");			
+			$.post(removeUrl, remData, function () { updateBasket(true); })
 		});
 
 		$(document).on('submit', 'form[name=addInventory]', function  (e) {

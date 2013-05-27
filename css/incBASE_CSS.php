@@ -1332,6 +1332,13 @@ ol.legalNumberOutline li{ padding-top: 15px}
 	display: block;
 }
 
+.modalMessage {
+	padding: 20px 0;
+	font-size: 16px;
+	position: relative;
+}
+
+
 /* Basket */
 
 .basket {
@@ -1340,6 +1347,17 @@ ol.legalNumberOutline li{ padding-top: 15px}
 	top: -120px;
 	right: -3px;
 	width: 354px;
+}
+
+#basketModal .modalMessage:after {
+	content: "\e000";
+	font-family: "Icons";
+	position: absolute;
+	top: -6px;
+	left: 30px;
+	color: #fff;
+	text-shadow: -1px -1px 0px rgba(0,0,0,0.3);
+	font-size: 64px;
 }
 
 .basketLink {
