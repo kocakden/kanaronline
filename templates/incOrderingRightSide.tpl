@@ -23,7 +23,6 @@
 								{else}
 									<div class="modalMessage">You have no items in your order</div>
 								{/if}
-								<div class="modalLoader"></div>
 							</div>
 
 						</div>												

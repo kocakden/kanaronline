@@ -91,7 +91,7 @@ window.jQuery && (function ($) {
 				"removeInventoryID": $btn.data('itemid')
 			}
 			
-			$btn.closest("modal").addClass("loading");			
+			$btn.closest('.basketItem').addClass('animated fadeOut');	
 			$.post(removeUrl, remData, function () { updateBasket(true); })
 		});
 

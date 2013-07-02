@@ -175,7 +175,7 @@
 			"file": "scripts/main.js",
 			"settings":
 			{
-				"buffer_size": 3143,
+				"buffer_size": 3156,
 				"line_ending": "Windows"
 			}
 		},
@@ -183,7 +183,7 @@
 			"file": "templates/incOrderingRightSide.tpl",
 			"settings":
 			{
-				"buffer_size": 5855,
+				"buffer_size": 5821,
 				"line_ending": "Windows"
 			}
 		},
@@ -306,6 +306,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/dogoku/Downloads/Penny.Arcades.On.the.Rain.Slick.Precipice.of.Darkness.4-HI2U/Penny.Arcades.On.the.Rain.Slick.Precipice.of.Darkness.4-HI2U/hi2u.nfo",
 		"/C/Users/dogoku/Downloads/icons39119/icons39119/lte-ie7.js",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/icons.css",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingLeftSide.tpl",
@@ -464,7 +465,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -614,15 +615,15 @@
 					"file": "scripts/main.js",
 					"settings":
 					{
-						"buffer_size": 3143,
+						"buffer_size": 3156,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1935,
-								1935
+								2317,
+								2317
 							]
 						],
 						"settings":
@@ -765,7 +766,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 495.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -775,15 +776,15 @@
 					"file": "templates/incOrderingRightSide.tpl",
 					"settings":
 					{
-						"buffer_size": 5855,
+						"buffer_size": 5821,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1117,
-								1117
+								1069,
+								1069
 							]
 						],
 						"settings":
@@ -853,8 +854,8 @@
 						"selection":
 						[
 							[
-								29961,
-								29930
+								29681,
+								28838
 							]
 						],
 						"settings":
@@ -907,7 +908,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 19609.0,
+						"translation.y": 19429.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
