@@ -41,13 +41,14 @@
 
 			<td align="right" valign="top">
 				{if !$hide_search}
-				<form method="post" action="" style="margin-top:16px;">
+				<form method="post" action="" style="margin-top:16px;position:relative">
 					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
 					<button type="submit" name="navBarSubmitSearch" class="btn searchBtn" title="Search">
 						<span class="icon" style="font-size: 16px;">&#xe001</span>
 					</button>
 					<a href="{$search_link}" class="btn">Advanced</a>
 					<!-- By {$type_select} in {$department_select} -->
+					<div id="searchResults"></div>
 				</form>
 				{/if}				
 			</td>

@@ -17,7 +17,7 @@ window.jQuery && (function ($) {
 
 	//Initialize all qty text fields with 1
 	function initQTY() {
-		$('.qtyField').val(1);
+		//$('.qtyField').val(1);
 	}
 
 	//Update the basket
@@ -122,9 +122,69 @@ window.jQuery && (function ($) {
 			})
 	}
 
-	function initLogin() {
+	function initSearch() {
 
+		var specialKeyCodeMap = {
+			9: "tab",
+			27: "esc",
+			37: "left",
+			39: "right",
+			13: "enter",
+			38: "up",
+			40: "down"
+		};
+
+		$('.searchTextBox').on("keyup", function (e) {
+			if (specialKeyCodeMap[e.which || e.keyCode]) {
+				return;
+			}
+
+			if (this.value && this.value.length >= 2) {
+				$.post("/", {
+					searchKeywords: this.value,
+					navBarSubmitSearch: ""
+				}, parseSearchResults)
+			}
+
+			
+		});
 	};
+
+	var template = Hogan.compile(
+			"	<ul class='search-result-list'>" +
+			"		{{#products}}" +
+			"			<li class='search-result-item'><a href='{{link}}'>" +
+			"			<img src='{{imgUrl}}'/><span>{{title}}</span><strong class='search-result-price'>{{price}}</strong></a></li>" +
+			"		{{/products}}" +
+			"	</ul>");
+
+	function parseSearchResults (response) {
+		var $response = $(response),
+			$links = $response.find('.catalogInvoiceLine'),
+			$link,
+			$price,
+			len = $links.length < 6 ? $links.length : 6,
+			products = [];		
+
+
+		for (var i =  0; i < len; i++) {
+			$link = $($links[i]);
+
+			$price = $link.closest('td[width="33%"]').find('.priceTableList');
+			$price = $price.siblings() ? $price.siblings() : $price;
+
+			products.push({
+				link: $link[0].href,
+				title: $link.text(),
+				imgUrl: $link.closest('td[width="33%"]').find('a img').attr('src'),
+				price: $price.find('td:last').text()
+			});
+
+		};
+
+		$('#searchResults').html(template.render({products: products}));
+
+	}
 
 	$(function () {
 
@@ -132,7 +192,7 @@ window.jQuery && (function ($) {
 		initQTY();
 		initBasket();
 		initModal();
-		initLogin();
+		initSearch();
 
 	});
 

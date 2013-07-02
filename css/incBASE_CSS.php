@@ -307,6 +307,71 @@ td.topRightNav a:hover {color: #111;}
 	margin: 0 0 0 -4px;
 }
 
+#searchResults {
+	display:none;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	right: 70px;
+	width: 281px;
+	top: 32px;
+	border-radius: 4px;
+	z-index: 2;
+}
+
+.search-result-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.search-result-item {
+	height: 50px;
+	padding: 5px;
+	border-top: 1px dotted #ccc;
+	position: relative;
+}
+
+
+
+.search-result-item a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+
+.search-result-item:hover a {
+	color: #4e9e45;
+	text-decoration: underline;
+}
+
+.search-result-item img {
+	display: block;
+	float:left;
+	width: 50px;
+	height: auto;
+	margin-right: 5px;
+}
+
+
+.search-result-item span {
+	display: block;
+	float: left;
+	height: 50px;
+	vertical-align: top;
+	width: 215px;
+	overflow: hidden;
+	text-align: left;
+	font-size: 12px;
+}
+
+.search-result-price {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
 
 /* Info Boxes */
 td.infoBoxHeader

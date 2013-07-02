@@ -13,6 +13,7 @@
 			</tr>
 		</table><!-- end page table -->
 	</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/hogan.js/2.0.0/hogan.min.js"></script>
 		<script src="/includes/scripts/main.js"></script>
 	</body>
 </html>
