@@ -115,7 +115,8 @@ stylecop.*
 ## Python
 sql
 *_p.c
-kanaronline.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 *~.nib
 .metadata
 ## Eclipse
