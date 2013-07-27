@@ -115,12 +115,16 @@ stylecop.*
 ## Python
 sql
 *_p.c
-*.sublime-project
-*.sublime-workspace
+
 *~.nib
 .metadata
 ## Eclipse
 ############
 .coverage
 *.py[co]
+
+
 # Others
+*.sublime-project
+*.sublime-workspace
+.~lock.*.docx#
