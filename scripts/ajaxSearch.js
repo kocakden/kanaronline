@@ -94,7 +94,7 @@
 				$.ajax({
 					url: url,
 					type: ajaxData.type,
-					data: ajaxData.data,
+					data: ajaxData.data
 				}).success(function(response) {
 					me.renderResults(query,response);
 				}).fail(function() {
