@@ -141,7 +141,7 @@ window.jQuery && (function ($) {
 				len = $links.length < 6 ? $links.length : 6,
 				products = [];
 
-			if ($links.length === 0) return false;
+			if ($links.length === 0) return "<span class='no-results'>Your search returned no results</span>";
 
 			for (var i =  0; i < len; i++) {
 				$link = $($links[i]);

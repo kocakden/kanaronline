@@ -348,6 +348,14 @@ td.topRightNav a:hover {color: #111;}
 	z-index: 2;
 }
 
+#searchResults .no-results {
+	font-size: 14px;
+	padding: 8px;
+	text-align: center;
+	display: block;
+	color: #999;
+}
+
 #searchResults.active {
 	display: block;
 }
