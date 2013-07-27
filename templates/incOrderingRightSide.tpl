@@ -1,11 +1,11 @@
-<table border="0" cellspacing="0" cellpadding="0" width="0" style="position:relative">
+<table border="0" cellspacing="0" cellpadding="0" width="0">
 	{if !$is_guest}
 		<tr><!-- right side table r 1 -->
 			<td align="center">
 				<div class="basket">
 	
 					<a class="basketLink" data-modal="#basketModal" href="{$order_checkout_link}" title="Click to view details">
-						<span class="icon" style="font-size: 16px;">&#xe000</span>
+						<span class="icon" style="font-size: 16px;">&#xe000;</span>
 						<span class='txt'></span>
 					</a>
 					<div id="basketModal" class="modal">

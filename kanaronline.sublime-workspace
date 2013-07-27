@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"sear",
+				"search-result-item"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"img",
+				"imgUrl"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
 				"remove",
 				"removeClass"
 			],
@@ -156,34 +188,34 @@
 	"buffers":
 	[
 		{
-			"file": "templates/incHeader.tpl",
-			"settings":
-			{
-				"buffer_size": 2890,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/incStoreLeftSide.tpl",
-			"settings":
-			{
-				"buffer_size": 2785,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "scripts/main.js",
 			"settings":
 			{
-				"buffer_size": 3156,
+				"buffer_size": 4642,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/incOrderingRightSide.tpl",
+			"file": "scripts/search.js",
 			"settings":
 			{
-				"buffer_size": 5821,
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/incFooter.tpl",
+			"settings":
+			{
+				"buffer_size": 879,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/incHeader.tpl",
+			"settings":
+			{
+				"buffer_size": 3187,
 				"line_ending": "Windows"
 			}
 		},
@@ -191,18 +223,32 @@
 			"file": "css/incBASE_CSS.php",
 			"settings":
 			{
-				"buffer_size": 34067,
+				"buffer_size": 35702,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 56 files for \"td.orderItemList\"\n\nC:\\Users\\dogoku\\Documents\\GitHub\\kanaronline\\css\\incADMIN_CSS.php:\n 1577  }\n 1578  \n 1579: td.orderItemList\n 1580  {\n 1581  	font-size: 10px;\n\nC:\\Users\\dogoku\\Documents\\GitHub\\kanaronline\\css\\incBASE_CSS.php:\n  585  }\n  586  \n  587: td.orderItemList \n  588  {\n  589  	font-size: 10pt; \n\n2 matches across 2 files\n",
+			"file": "css/ie8.css",
 			"settings":
 			{
-				"buffer_size": 355,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
+				"buffer_size": 49,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/ie7.css",
+			"settings":
+			{
+				"buffer_size": 118,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/dogoku/Downloads/bootstrap/css/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 127352,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -213,8 +259,8 @@
 		"selected_items":
 		[
 			[
-				"insta",
-				"Package Control: Install Package"
+				"prefix",
+				"Preferences: Prefixr Key Bindings – Default"
 			],
 			[
 				"css",
@@ -225,16 +271,24 @@
 				"Package Control: Remove Package"
 			],
 			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"lint",
 				"SublimeLinter: Show Error List"
 			],
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"prefix",
-				"Preferences: Prefixr Key Bindings – Default"
 			],
 			[
 				"Package Control: in",
@@ -251,10 +305,6 @@
 			[
 				"list",
 				"Package Control: List Packages"
-			],
-			[
-				"html",
-				"Set Syntax: HTML"
 			],
 			[
 				"space",
@@ -306,21 +356,27 @@
 	},
 	"file_history":
 	[
+		"/C/Sublime Text 2.0.1 x64/Data/Packages/Prefixr/Default (Windows).sublime-keymap",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/ie7.css",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/incBASE_CSS.php",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingRightSide.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/ie6.css",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/ie7.css",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/ie8.css",
+		"/C/Users/dogoku/Downloads/icons39119/icons39119/fonts/icons.eot",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/scripts/search.js",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incHeader.tpl",
+		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreLeftSide.tpl",
 		"/C/Users/dogoku/Downloads/Penny.Arcades.On.the.Rain.Slick.Precipice.of.Darkness.4-HI2U/Penny.Arcades.On.the.Rain.Slick.Precipice.of.Darkness.4-HI2U/hi2u.nfo",
 		"/C/Users/dogoku/Downloads/icons39119/icons39119/lte-ie7.js",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/icons.css",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingLeftSide.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%AB^AB9^AB9B7DE4%%incStoreRightSide.tpl.php",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/templates_c/%%22^227^22775E75%%incOrderingRightSide.tpl.php",
-		"/C/Sublime Text 2.0.1 x64/Data/Packages/Prefixr/Default (Windows).sublime-keymap",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreRightSide.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/index.tpl",
-		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incHeader.tpl",
-		"/C/Users/dogoku/Documents/GitHub/kanaronline/css/incBASE_CSS.php",
-		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incStoreLeftSide.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/scripts/main.js",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incFooter.tpl",
-		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/incOrderingRightSide.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/ftpsync.settings",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/welcome.tpl",
 		"/C/Users/dogoku/Documents/GitHub/kanaronline/templates/logos.tpl",
@@ -357,7 +413,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 92.0,
 		"where_history":
 		[
 			""
@@ -368,6 +424,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".btn",
+			"btn",
+			" browse depts table ",
+			"&#xe00",
+			"&#xe001",
+			"&#xe001;",
+			"Search",
+			"search",
+			"<script",
 			"\"></",
 			"fadeOutUp",
 			"td.orderItemList",
@@ -465,165 +530,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/incHeader.tpl",
-					"settings":
-					{
-						"buffer_size": 2890,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1448,
-								1448
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/incStoreLeftSide.tpl",
-					"settings":
-					{
-						"buffer_size": 2785,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "scripts/main.js",
 					"settings":
 					{
-						"buffer_size": 3156,
+						"buffer_size": 4642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2317,
-								2317
+								795,
+								795
 							]
 						],
 						"settings":
@@ -766,25 +689,96 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "templates/incOrderingRightSide.tpl",
+					"buffer": 1,
+					"file": "scripts/search.js",
 					"settings":
 					{
-						"buffer_size": 5821,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1069,
-								1069
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/incFooter.tpl",
+					"settings":
+					{
+						"buffer_size": 879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								715,
+								715
 							]
 						],
 						"settings":
@@ -843,19 +837,90 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "css/incBASE_CSS.php",
+					"buffer": 3,
+					"file": "templates/incHeader.tpl",
 					"settings":
 					{
-						"buffer_size": 34067,
+						"buffer_size": 3187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29681,
-								28838
+								1723,
+								1723
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/incBASE_CSS.php",
+					"settings":
+					{
+						"buffer_size": 35702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12877,
+								12863
 							]
 						],
 						"settings":
@@ -908,40 +973,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 19429.0,
+						"translation.y": 4808.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "css/ie8.css",
 					"settings":
 					{
-						"buffer_size": 355,
+						"buffer_size": 49,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										134,
-										150
-									],
-									[
-										276,
-										292
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								242,
-								242
+								49,
+								0
 							]
 						],
 						"settings":
@@ -990,16 +1040,158 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/ie7.css",
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "/C/Users/dogoku/Downloads/bootstrap/css/bootstrap.css",
+					"settings":
+					{
+						"buffer_size": 127352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59032,
+								59032
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 48601.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1024,6 +1216,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -1034,6 +1232,7 @@
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -1052,16 +1251,20 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"css",
+				"css/incBASE_CSS.php"
+			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": false,
 	"show_open_files": false,

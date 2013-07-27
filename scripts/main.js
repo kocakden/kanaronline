@@ -15,22 +15,17 @@ window.jQuery && (function ($) {
 		}
 	}
 
-	//Initialize all qty text fields with 1
-	function initQTY() {
-		//$('.qtyField').val(1);
-	}
-
 	//Update the basket
 	function updateBasket (async) {
 
 		if (async) {
-			$('#basketModal').load("/ #basketContent", function () { 
-				updateBasket(); 
+			$('#basketModal').load("/ #basketContent", function () {
+				updateBasket();
 				$(this).prepend("<div class='modalBG'></div>");
 				$('.basketLink').trigger('click');
 			});
 		} else {
-			var basketTxt = $('#basket_info').text().trim();
+			var basketTxt = $('#basket_info').text();
 			$('.basketLink').find('.txt').text(basketTxt.length > 0 ? basketTxt : 'Empty');
 
 			var $basketModal = $('#basketModal').find('.modalContent'),
@@ -90,8 +85,8 @@ window.jQuery && (function ($) {
 			var remData = {
 				"removeInventoryID": $btn.data('itemid')
 			}
-			
-			$btn.closest('.basketItem').addClass('animated fadeOut');	
+
+			$btn.closest('.basketItem').addClass('animated fadeOut');
 			$.post(removeUrl, remData, function () { updateBasket(true); })
 		});
 
@@ -100,10 +95,14 @@ window.jQuery && (function ($) {
 
 			var $form = $(this);
 
-			$.post(this.action, $form.serialize(), function  (d) {
-				updateBasket(true);
-				$('.basketLink').removeClass('updated').addClass('updated');
-			});
+			//Only add if there is a quantity specified
+			//if ($form.parent().find('input.qtyField').val()) {
+
+				$.post(this.action, $form.serialize(), function  (d) {
+					updateBasket(true);
+					$('.basketLink').removeClass('updated').addClass('updated');
+				});
+			//}
 
 		});
 
@@ -122,74 +121,63 @@ window.jQuery && (function ($) {
 			})
 	}
 
-	function initSearch() {
+	function initSearch () {
 
-		var specialKeyCodeMap = {
-			9: "tab",
-			27: "esc",
-			37: "left",
-			39: "right",
-			13: "enter",
-			38: "up",
-			40: "down"
+		var template = Handlebars.compile([
+			"<ul class='search-result-list'>",
+			"	{{#products}}",
+			"		<li class='search-result-item{{#if price}} has-price{{/if}}'><a href='{{link}}'>",
+			"		<i><img src='{{imgUrl}}'/></i><span>{{title}}</span>",
+			"		{{#if price}}<strong class='search-result-price'>{{price}}</strong>{{/if}}</a></li>",
+			"	{{/products}}",
+			"</ul>"].join("")
+		);
+
+		function parseSearchResults (response) {
+			var $response = $(response),
+				$links = $response.find('.catalogInvoiceLine'),
+				$link,
+				$price,
+				len = $links.length < 6 ? $links.length : 6,
+				products = [];
+
+			if ($links.length === 0) return false;
+
+			for (var i =  0; i < len; i++) {
+				$link = $($links[i]);
+
+				$price = $link.closest('td[width="33%"]').find('.priceTableList');
+				$price = $price.siblings() ? $price.siblings() : $price;
+
+				products.push({
+					link: $link[0].href,
+					title: $link.text(),
+					imgUrl: $link.closest('td[width="33%"]').find('a img').attr('src'),
+					price: $price.find('td:last').text() || false
+				});
+
+			};
+
+			return template({products: products});
 		};
 
-		$('.searchTextBox').on("keyup", function (e) {
-			if (specialKeyCodeMap[e.which || e.keyCode]) {
-				return;
-			}
-
-			if (this.value && this.value.length >= 2) {
-				$.post("/", {
-					searchKeywords: this.value,
-					navBarSubmitSearch: ""
-				}, parseSearchResults)
-			}
-
-			
+		$('.searchTextBox').ajaxSearch({
+			url: "/",
+			ajaxData: {
+				type: "post",
+				data: {navBarSubmitSearch: ""}
+			},
+			postQueryParam: 'searchKeywords',
+			parser: parseSearchResults,
+			results: '#searchResults'
 		});
 	};
 
-	var template = Hogan.compile(
-			"	<ul class='search-result-list'>" +
-			"		{{#products}}" +
-			"			<li class='search-result-item'><a href='{{link}}'>" +
-			"			<img src='{{imgUrl}}'/><span>{{title}}</span><strong class='search-result-price'>{{price}}</strong></a></li>" +
-			"		{{/products}}" +
-			"	</ul>");
 
-	function parseSearchResults (response) {
-		var $response = $(response),
-			$links = $response.find('.catalogInvoiceLine'),
-			$link,
-			$price,
-			len = $links.length < 6 ? $links.length : 6,
-			products = [];		
-
-
-		for (var i =  0; i < len; i++) {
-			$link = $($links[i]);
-
-			$price = $link.closest('td[width="33%"]').find('.priceTableList');
-			$price = $price.siblings() ? $price.siblings() : $price;
-
-			products.push({
-				link: $link[0].href,
-				title: $link.text(),
-				imgUrl: $link.closest('td[width="33%"]').find('a img').attr('src'),
-				price: $price.find('td:last').text()
-			});
-
-		};
-
-		$('#searchResults').html(template.render({products: products}));
-
-	}
 
 	$(function () {
 
 		getAccountInfo();
-		initQTY();
 		initBasket();
 		initModal();
 		initSearch();

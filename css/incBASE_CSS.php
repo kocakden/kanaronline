@@ -14,12 +14,12 @@ $baseText = 8;
 
 /******************************************************************************************
 	Icon Set:	IcoMoon - Free -- http://keyamoon.com/icomoon/
-	License:	CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/ 
+	License:	CC BY 3.0 -- http://creativecommons.org/licenses/by/3.0/
 *******************************************************************************************/
 
 @font-face {
 	font-family: 'icons';
-	src:url('fonts/icons.eot');
+	src:url('icons.eot');
 }
 @font-face {
 	font-family: 'icons';
@@ -33,13 +33,13 @@ $baseText = 8;
 	font-family: 'icons';
 	display: inline-block;
 	vertical-align: text-top;
-	
+
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	
+
 	speak: none;
 	-webkit-font-smoothing: antialiased;
 }
@@ -61,7 +61,7 @@ $baseText = 8;
 /******************************************************************************************/
 
 
-body 
+body
 {
 	font-family: arial, helvetica, ver dana;
 	margin: 0px;
@@ -70,6 +70,7 @@ body
 }
 
 body > .wrapper {
+	position:relative;
 	width: 960px;
 	margin: 32px auto;
 	background: #fff;
@@ -83,30 +84,46 @@ img{
 	border: 0pt black solid;
 }
 
-a 
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	text-decoration:underline; 
+a
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	text-decoration:underline;
 	color:<?=PRIMARY_COLOR?>;
 }
 
-a.bold 
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	text-decoration:underline; 
+a.bold
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	text-decoration:underline;
 	font-weight:bold;
 	color:<?=PRIMARY_COLOR?>;
 }
 
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
 .btn {
-	padding: 4px 5px 5px;
-	border: 1px solid #333;
-	background: #333;
-	cursor: pointer;
-	text-decoration: none;
+	display:inline-block;
+	*display: inline;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	*margin-left: .3em;
+	font-size: 14px;
+	line-height: 16px;
 	color: white;
+	text-align: center;
+	vertical-align:middle;
+	cursor: pointer;
+	background-color: #333;
+	border: 1px solid #333;
+	*border: 0;
 	border-radius: 4px;
-	font-size: 10pt;
+	*zoom: 1;
+	text-decoration: none;
+
 	-webkit-transition: background-color 0.3s ease;
 	-moz-transition: background-color 0.3s ease;
 	-o-transition: background-color 0.3s ease;
@@ -118,7 +135,7 @@ a.bold
 	background-color: #666;
 }
 
-td 
+td
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 }
@@ -167,70 +184,70 @@ td.footer a:hover {
 	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
 }
 
-.pageHeader 
+.pageHeader
 {
-	font-size:<?=$baseText + 4 + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + 4 + $fontSizeChange?>pt;
 	font-weight:bold;
 	border-bottom: 1px black solid;
 }
 
-.pageSubHeader 
+.pageSubHeader
 {
-	font-size:<?=$baseText + 3 + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + 3 + $fontSizeChange?>pt;
 	font-weight:bold;
-	color:<?=PRIMARY_COLOR?>; 
+	color:<?=PRIMARY_COLOR?>;
 	border-bottom: 1px <?=PRIMARY_COLOR?> solid;
 }
 
 a.subHeader
 {
-	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + 2 + $fontSizeChange?>pt;
 	text-decoration: none;
-	color:<?=PRIMARY_COLOR?>; 
+	color:<?=PRIMARY_COLOR?>;
 }
 
 a.subHeader:hover
 {
 	color:#000000;
-	text-decoration: underline; 
+	text-decoration: underline;
 }
 
 .pageDescription
 {
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	color:#333333; 
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
+	color:#333333;
 }
 
-.pageDescTip  
-{ 
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	color:<?=PRIMARY_COLOR?>; 
+.pageDescTip
+{
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
+	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
 }
 
-a.pageDescLink 
+a.pageDescLink
 {
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	color:<?=PRIMARY_COLOR?>; 
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
+	color:<?=PRIMARY_COLOR?>;
 	text-decoration:underline;
 	font-weight:bold;
 }
 
 a.pageDescLink:hover { color:#000000; }
 
-tr.tableHeaderOutline 
+tr.tableHeaderOutline
 {
-	background-color:#333333; 
-	color:#ffffff; 
-	font-family:arial; 
-	font-size:<?=$baseText - 2 + $fontSizeChange?>pt; 
-} 
+	background-color:#333333;
+	color:#ffffff;
+	font-family:arial;
+	font-size:<?=$baseText - 2 + $fontSizeChange?>pt;
+}
 
-td.tableHeaderOutlineLeftVert { border-left: 1px #333333 solid; } 
+td.tableHeaderOutlineLeftVert { border-left: 1px #333333 solid; }
 
 #errorMsg
 {
-	color:#CC6666; 
+	color:#CC6666;
 	font-size: <?=$baseText + 2 + $fontSizeChange?>pt;
 	font-weight: bold;
 }
@@ -245,15 +262,15 @@ td.tableHeaderOutlineLeftVert { border-left: 1px #333333 solid; }
 /* Header */
 table#newSearchTable
 {
-	border: 1px solid #333; 
-	border-left:0; 
+	border: 1px solid #333;
+	border-left:0;
 	border-right:0;
 	/*background-color: <?=SEARCH_COLOR?>;*/
 }
 
-tr#newSearch 
+tr#newSearch
 {
-	color: <?=PRIMARY_COLOR?>; 
+	color: <?=PRIMARY_COLOR?>;
 }
 
 tr#newSearch td {font-size: <?=$baseText + 2 + $fontSizeChange?>pt;}
@@ -261,22 +278,22 @@ tr#newSearch td {font-size: <?=$baseText + 2 + $fontSizeChange?>pt;}
 td.topRightNav
 {
 	padding:0 5px;
-	color: #696969; 
+	color: #696969;
 	font-size: <?=$baseText + 2 + $fontSizeChange?>pt;
 }
 
-td.topRightNav a 
+td.topRightNav a
 {
-	color: #696969; 
-	text-decoration: none; 
-	font-size: <?=$baseText + 2 + $fontSizeChange?>pt; 
+	color: #696969;
+	text-decoration: none;
+	font-size: <?=$baseText + 2 + $fontSizeChange?>pt;
 	font-weight: bold;
 }
 
 td.topRightNav a:hover {color: #111;}
 
-.searchSelect 
-{  
+.searchSelect
+{
 	font-size: 12px;
 	color: #333;
 	border: 1px solid #ccc;
@@ -284,15 +301,20 @@ td.topRightNav a:hover {color: #111;}
 	border-radius: 4px;
 }
 
-.searchTextBox 
-{ 
-	font-size: 12px;
+.searchTextBox
+{
+	vertical-align:middle;
+	font-size: 14px;
 	color: #999;
-	padding: 5px 10px;
+	padding: 4px 10px;
 	width: 233px;
 	border-radius: 4px 0 0 4px;
 	border: 1px solid #ccc;
 	-webkit-transition: color 0.3s ease, border-color 0.3s ease;
+	-moz-transition: color 0.3s ease, border-color 0.3s ease;
+	-o-transition: color 0.3s ease, border-color 0.3s ease;
+	-ms-transition: color 0.3s ease, border-color 0.3s ease;
+	transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .searchTextBox:focus {
@@ -301,10 +323,17 @@ td.topRightNav a:hover {color: #111;}
 	border-color: #333;
 }
 
+.searchTextBox.searching {
+	background-image: url(data:image/gif;base64,R0lGODlhEAAQAPIAAP///zMzM87OzmdnZzMzM4GBgZqamqenpyH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==);
+	background-position: 98% center;
+	background-repeat: no-repeat;
+}
+
 .searchBtn {
 	border: 1px solid #333;
 	border-radius: 0 4px 4px 0;
 	margin: 0 0 0 -4px;
+	padding: 4px 8px;
 }
 
 #searchResults {
@@ -312,11 +341,15 @@ td.topRightNav a:hover {color: #111;}
 	position: absolute;
 	background: #fff;
 	border: 1px solid #ccc;
-	right: 70px;
-	width: 281px;
+	right: 91px;
+	width: 316px;
 	top: 32px;
 	border-radius: 4px;
 	z-index: 2;
+}
+
+#searchResults.active {
+	display: block;
 }
 
 .search-result-list {
@@ -332,44 +365,61 @@ td.topRightNav a:hover {color: #111;}
 	position: relative;
 }
 
-
+.search-result-item:first-child {
+	border-top:0;
+}
 
 .search-result-item a {
 	color: #333;
 	text-decoration: none;
 	display: block;
 	width: 100%;
+	text-align: left;
 }
 
 .search-result-item:hover a {
 	color: #4e9e45;
-	text-decoration: underline;
+}
+
+.search-result-item a > * {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:5px;
+
+	zoom: 1; /* ie fix */
+}
+
+.search-result-item i {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	margin-left:0px;
 }
 
 .search-result-item img {
-	display: block;
-	float:left;
-	width: 50px;
+	width: 100%;
 	height: auto;
-	margin-right: 5px;
 }
 
 
 .search-result-item span {
-	display: block;
-	float: left;
-	height: 50px;
-	vertical-align: top;
-	width: 215px;
-	overflow: hidden;
+	width: 210px;
 	text-align: left;
 	font-size: 12px;
 }
 
+.search-result-item.has-price span {
+	width: 175px;
+}
+
 .search-result-price {
-	position: absolute;
-	right: 5px;
-	bottom: 5px;
+	display: none;
+	width: 65px;
+	text-align: right;
+}
+
+.search-result-item.has-price .search-result-price {
+	display: inline-block;
 }
 
 
@@ -420,76 +470,76 @@ td.navBoxFooter
 }
 
 /* Left Include */
-a.listDepartmentLink 
-{ 
-	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; 
-	font-weight:bold; 
-	color:#000000; 
+a.listDepartmentLink
+{
+	font-size:<?=$baseText + 2 + $fontSizeChange?>pt;
+	font-weight:bold;
+	color:#000000;
 	text-decoration:none;
 }
 
-a.listDepartmentLink:hover 
-{ 
+a.listDepartmentLink:hover
+{
 	color:<?=PRIMARY_COLOR?>;
 	text-decoration:none;
 }
 
-a.listCatalogLink 
+a.listCatalogLink
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	text-decoration:none; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	text-decoration:none;
 	color: #696969;
 	font-weight: bold;
 }
 
 a.listCatalogLink:hover { color:<?=PRIMARY_COLOR?>;}
 
-a.listHeadlineLink 
-{ 
+a.listHeadlineLink
+{
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	color: black; 
+	color: black;
 	text-decoration: none;
 }
 
-a.advancedSearch 
-{ 
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	font-weight:bold; 
-	text-decoration:none; 
+a.advancedSearch
+{
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
+	font-weight:bold;
+	text-decoration:none;
 	color:#333333;
 }
 
 a.advancedSearch:hover { color:<?=PRIMARY_COLOR?>;}
 
 /* Inventory Pages */
-a.location 
-{ 
-	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; 
+a.location
+{
+	font-size:<?=$baseText + 2 + $fontSizeChange?>pt;
 	text-decoration:none;
-	font-weight:bold; 
+	font-weight:bold;
 	color:#000000;
 }
 
 a.location:hover { color:<?=PRIMARY_COLOR?>;}
 
-a.catalogInvoiceLine 
-{ 
-	font-size:<?=$baseText + 3 + $fontSizeChange?>pt; 
-	font-weight:bold; text-decoration:none; 
+a.catalogInvoiceLine
+{
+	font-size:<?=$baseText + 3 + $fontSizeChange?>pt;
+	font-weight:bold; text-decoration:none;
 	color:#000000;
 }
 
-a.catalogInvoiceLine:hover 
-{ 
-	text-decoration:none; 
-	color:<?=PRIMARY_COLOR?>; 
+a.catalogInvoiceLine:hover
+{
+	text-decoration:none;
+	color:<?=PRIMARY_COLOR?>;
 }
 
-a.catalogDescriptionLink 
+a.catalogDescriptionLink
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight:bold; 
-	text-decoration:underline; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold;
+	text-decoration:underline;
 	color:<?=PRIMARY_COLOR?>;
 }
 
@@ -498,7 +548,7 @@ a.catalogDescriptionLink:hover { color:#000000; }
 .catalogModel
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	font-weight:bold; 
+	font-weight:bold;
 	color:<?=PRIMARY_COLOR?>;
 }
 
@@ -534,140 +584,140 @@ td.resultsBoxFooter
 
 /*.catalogAttribute { border-bottom: 1px <?=PRIMARY_COLOR?> dotted; }*/
 tr.priceTableOnDiscount
-{ 
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
+{
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
 	font-weight:bold;
-	color:#000000; 
+	color:#000000;
 	background-color:#C8D96B;
 }
 
 tr.priceTableList
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#696969; 
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#696969;
 	background-color:#ffffff;
 }
 
 td.regPriceTableLabel
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:#333333;
 	background-color:#ffffff;
 }
 
 td.regPriceTableValue
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:#333333;
 	background-color:#ffffff;
 }
 
 td.endColumnTableLabel
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#000000; 
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#000000;
 	background-color:#ffffff;
 }
 
 td.endColumnTableValue
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight: bold; 
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight: bold;
 	color:#000000;
 	background-color:#ffffff;
 }
 
 /*
-tr.priceTableBlue 
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight: bold; 
+tr.priceTableBlue
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight: bold;
 	color:<?=PRIMARY_COLOR?>;
 	background-color:#ffffff;
 }
 
-tr.priceTableRed 
-{ 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#CC6666; 
+tr.priceTableRed
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#CC6666;
 	background-color:#ffffff;
 }
 
 */
-td.listDepartment 
-{ 
-	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; 
-	font-weight:bold; 
+td.listDepartment
+{
+	font-size:<?=$baseText + 2 + $fontSizeChange?>pt;
+	font-weight:bold;
 	color:<?=PRIMARY_COLOR?>;
 }
 
-td.listHeadline 
+td.listHeadline
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight:bold; 
-	padding-top: 2px; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold;
+	padding-top: 2px;
 	color:#000000;
 }
 
-td.listCatalog 
+td.listCatalog
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight:bold; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold;
 	color:#696969;
 }
 
 td.locationNoLink
 {
-	font-size:<?=$baseText + 2 + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + 2 + $fontSizeChange?>pt;
 	font-weight:bold;
 	color:#696969;
 }
 
 td.catalogDescription {font-size:<?=$baseText + $fontSizeChange?>pt;}
 
-td.catalogAttributeDescription 
+td.catalogAttributeDescription
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#696969; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#696969;
 	font-weight:bold;
 }
 
-.moreArrow 
+.moreArrow
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:<?=PRIMARY_COLOR?>; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
 }
 
-td.qty 
+td.qty
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight:bold; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold;
 	color:#696969;
 }
 
-td.itemCount 
+td.itemCount
 {
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	color:<?=PRIMARY_COLOR?>; 
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
+	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
 }
 
-.qtyField 
+.qtyField
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	text-align:center;
-	color:<?=PRIMARY_COLOR?>; 
-	font-weight:bold; 
-	border: 1px #000000 solid; 
+	color:<?=PRIMARY_COLOR?>;
+	font-weight:bold;
+	border: 1px #000000 solid;
 }
 
 /* Right Include */
 a.viewOrder
 {
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	font-weight:bold; 
-	text-decoration:none; 
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
+	font-weight:bold;
+	text-decoration:none;
 	color:white;
 }
 
@@ -678,16 +728,16 @@ a.viewOrder:hover{ text-decoration:underline;}
 
 a.tools
 {
-	font-size:12px; 
+	font-size:12px;
 	text-decoration:none;
 	color:#000000;
 }
 
 a.tools:hover { text-decoration:underline;}
 
-.yourAccountStore 
+.yourAccountStore
 {
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
 	font-weight:bold;
 }
 
@@ -704,7 +754,7 @@ td.promoHeaderFooter
 
 td.promoBullet
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
 	background-color: #F0F0F0;
@@ -754,91 +804,91 @@ a.promoApplyLink
 }
 
 /* Product.php */
-td.detailInvoiceLine 
+td.detailInvoiceLine
 {
 	font-size:<?=$baseText + 3 + $fontSizeChange?>pt;
 	font-weight:bold;
 	color:<?=PRIMARY_COLOR?>;
 }
 
-td.slaveTableMsg 
+td.slaveTableMsg
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight:bold; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold;
 	color:<?=PRIMARY_COLOR?>;
 }
 
-td.slaveTableHeader 
+td.slaveTableHeader
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
 	/*font-weight: bold; */
-	color:#696969; 
+	color:#696969;
 	background-color:#ffffff;
 }
 
-td.slaveTableQty 
+td.slaveTableQty
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:<?=PRIMARY_COLOR?>; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:<?=PRIMARY_COLOR?>;
 	background-color:#ffffff;
 }
 
-td.slaveTableReg 
+td.slaveTableReg
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#000000; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#000000;
 	background-color:#ffffff;
 }
 
-td.slaveTableList 
+td.slaveTableList
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#696969; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#696969;
 	background-color:#ffffff;
 }
 
-td.slaveTableRegPrice 
+td.slaveTableRegPrice
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:#333333;
 	background-color:#ffffff;
 }
 
-td.slaveTableEndColumn 
+td.slaveTableEndColumn
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight:bold; color:#000000;  
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold; color:#000000;
 	background-color:#ffffff;
 }
 
 table.notes
 {
-	border-left: 1px black solid; 
+	border-left: 1px black solid;
 	border-top: 1px black solid;
 }
 
 table.notes td
 {
-	border-right: 1px black solid; 
+	border-right: 1px black solid;
 	border-bottom: 1px black solid;
 }
 
 /* Paging */
 a.newSearch
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
 	text-decoration:none;
-	font-weight:bold;  
+	font-weight:bold;
 	color:<?=PRIMARY_COLOR?>;
 }
 
 a.newSearch:hover { text-decoration:underline;}
 
-a.viewMode 
+a.viewMode
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	font-weight:bold; 
-	text-decoration:none; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold;
+	text-decoration:none;
 	color:<?=PRIMARY_COLOR?>;
 }
 
@@ -847,8 +897,8 @@ a.viewMode:hover { text-decoration:underline;}
 a.pagingBold
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	font-weight:bold; 
-	text-decoration:none; 
+	font-weight:bold;
+	text-decoration:none;
 	color:<?=PRIMARY_COLOR?>;
 }
 
@@ -857,8 +907,8 @@ a.pagingBold:hover { color:#000000;}
 a.pagingPageLink
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	font-weight:bold; 
-	text-decoration:underline; 
+	font-weight:bold;
+	text-decoration:underline;
 	color:<?=PRIMARY_COLOR?>;
 }
 
@@ -867,7 +917,7 @@ a.pagingPageLink:hover { color:#000000; }
 .pagingPageNoLink
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	font-weight:bold; 
+	font-weight:bold;
 }
 
 .pagingInactive
@@ -876,108 +926,108 @@ a.pagingPageLink:hover { color:#000000; }
 	color:#696969;
 }
 
-td.numResultsFound 
+td.numResultsFound
 {
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	font-weight:bold; 
-	color:#000000;
-}
-
-td.resultsLabel 
-{
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#000000;
-}
-
-td.paging 
-{
-	font-size:<?=$baseText + 1 + $fontSizeChange?>pt; 
-	color:#000000;
-}
-
-select.resultsSelect 
-{
-	font-family:arial; 
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
 	font-weight:bold;
-	border-style:solid; 
-	border-width:1px; 
-	background-color:#ffffff; 
+	color:#000000;
+}
+
+td.resultsLabel
+{
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#000000;
+}
+
+td.paging
+{
+	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
+	color:#000000;
+}
+
+select.resultsSelect
+{
+	font-family:arial;
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	font-weight:bold;
+	border-style:solid;
+	border-width:1px;
+	background-color:#ffffff;
 	color:<?=PRIMARY_COLOR?>;
 }
 
 /* Complete Order Pages */
-td.completeOrderActive 
+td.completeOrderActive
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
-	color:#CC6666; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
+	color:#CC6666;
 	font-weight:bold;
 }
 
-td.completeOrderFuture 
+td.completeOrderFuture
 {
-	font-size:<?=$baseText + $fontSizeChange?>pt; 
+	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:#000000;
 }
 
-td.completeOrderMsg 
+td.completeOrderMsg
 {
-	font-size:13px; 
-	font-weight:bold; 
+	font-size:13px;
+	font-weight:bold;
 	color:#000000;
 }
 
-span#step 
+span#step
 {
-	font-size: 13px; 
-	font-weight: bold; 
+	font-size: 13px;
+	font-weight: bold;
 	color: black;
 }
 
 table.tableForm {border-top: 1px black solid;}
 
-table.tableForm td 
+table.tableForm td
 {
-	font-size: <?=$baseText + $fontSizeChange?>pt; 
+	font-size: <?=$baseText + $fontSizeChange?>pt;
 	padding: 5px;
 }
 
 table.tableForm td.leftCell
-{ 
-	border-bottom: 1px black solid; 
-	border-left: 1px black solid; 
-	background-color: #696969; 
-	color: white; 
-	font-weight: bold; 
+{
+	border-bottom: 1px black solid;
+	border-left: 1px black solid;
+	background-color: #696969;
+	color: white;
+	font-weight: bold;
 	border-right: 1px black solid;
 }
 
 table.tableForm td.rightCell
-{ 
-	border-bottom: 1px black solid; 
-	border-right: 1px black solid; 
+{
+	border-bottom: 1px black solid;
+	border-right: 1px black solid;
 	background-color: #DDDDDD;
 }
 
 .seperator {border-top: 2px black solid;}
 
 table.tableForm td.sectionTitle
-{ 
-	background-color: black; 
-	color: white; 
+{
+	background-color: black;
+	color: white;
 	font-weight: bold;
 }
 
 table.tableForm td.white
-{ 
-	border: 1px black solid; 
-	border-top: 0pt white solid; 
+{
+	border: 1px black solid;
+	border-top: 0pt white solid;
 	color: black;
 }
 
 td#weightCost
-{ 
-	background-color: <?=PRIMARY_COLOR?>; 
+{
+	background-color: <?=PRIMARY_COLOR?>;
 	color: white;
 }
 
@@ -985,34 +1035,34 @@ input.textInput { border: 1px black solid;}
 
 select.selectInput { border: 1px black solid;}
 
-a.orderProgressLink 
+a.orderProgressLink
 {
-	font-size:12px; 
-	text-decoration:none; 
-	font-weight:bold; 
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
 	color:<?=PRIMARY_COLOR?>;
 }
 
 a.orderProgressLink:hover { text-decoration:underline;}
 
-.orderProgress 
-{ 
-	font-size:12px; 
-	text-decoration:none; 
-	font-weight:bold; 
+.orderProgress
+{
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
 	color:#696969;
 }
 
-.summaryPo 
-{ 
-	font-size:12px; 
+.summaryPo
+{
+	font-size:12px;
 	text-decoration:none;
 	font-weight:bold;
 	color:#ffffff;
 }
 
-.orderSummary 
-{ 
+.orderSummary
+{
 	font-size:12px;
 	text-decoration:none;
 	color:#000000;
@@ -1049,15 +1099,15 @@ a.orderProgressLink:hover { text-decoration:underline;}
 	background-image: url(<?=IMGDIR_INTERFACE?>lock.png);
 }
 
-.shipRate 
-{ 
+.shipRate
+{
 	font-size:12px;
 	font-weight:bold;
 	color:#000000;
 }
 
-.commitOrderSubTotalLabel 
-{ 
+.commitOrderSubTotalLabel
+{
 	font-weight:bold;
 	color:#ffffff;
 	border-right: 1px black solid;
@@ -1065,31 +1115,31 @@ a.orderProgressLink:hover { text-decoration:underline;}
 	background-color:#000000;
 }
 
-.commitOrderSubTotal 
+.commitOrderSubTotal
 {
 	font-weight:bold;
 	color:#000000;
 	border-bottom: 1px black solid;
 	border-left: 1px black solid;
 	border-right: 1px black solid;
-} 
-.commitOrderShipTotalLabel 
-{ 
-	font-weight:bold; 
-	color:#ffffff; 
-	border-right: 1px black solid; 
-	border-bottom: 1px white solid; 
-	background-color:#000000; 
+}
+.commitOrderShipTotalLabel
+{
+	font-weight:bold;
+	color:#ffffff;
+	border-right: 1px black solid;
+	border-bottom: 1px white solid;
+	background-color:#000000;
 }
 
-.commitOrderShipTotal 
+.commitOrderShipTotal
 {
-	color:#000000; 
-	border-bottom: 1px black solid; 
-	border-left: 1px black solid; 
+	color:#000000;
+	border-bottom: 1px black solid;
+	border-left: 1px black solid;
 	border-right: 1px black solid;
-} 
-.commitOrderTotalLabel 
+}
+.commitOrderTotalLabel
 {
 	font-weight:bold;
 	color:#ffffff;
@@ -1104,10 +1154,10 @@ a.orderProgressLink:hover { text-decoration:underline;}
 	border-bottom: 1px black solid;
 	border-left: 1px black solid;
 	border-right: 1px black solid;
-} 
+}
 /* Order.php */
-a.orderRecordLink 
-{ 
+a.orderRecordLink
+{
 	color: black;
 	text-decoration: none
 }
@@ -1116,14 +1166,14 @@ a.orderRecordLink:hover { text-decoration: underline;}
 
 tr.orderRow {font-size: 15pt;}
 
-tr.orderHeader 
+tr.orderHeader
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	font-weight:bold; color:#ffffff;
 	background-color:#000000;
 }
 
-td.orderStd 
+td.orderStd
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:#000000;
@@ -1137,7 +1187,7 @@ td.leftCorner
 	border-bottom: 1px black solid;
 }
 
-td.orderTotal 
+td.orderTotal
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	font-weight:bold;
@@ -1147,7 +1197,7 @@ td.orderTotal
 	border-top: 0pt black solid;
 }
 
-td.orderSubTotalLabel 
+td.orderSubTotalLabel
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	font-weight:bold;
@@ -1158,7 +1208,7 @@ td.orderSubTotalLabel
 	border-top: 0pt black solid;
 }
 
-td.orderSubTotal 
+td.orderSubTotal
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	font-weight:bold;
@@ -1166,7 +1216,7 @@ td.orderSubTotal
 	background-color:#ffffff;
 	border: 1px black solid;
 	border-top: 0pt black solid;
-}	
+}
 td.crossSellTitle
 {
 	background-color: <?=PRIMARY_COLOR?>;
@@ -1176,7 +1226,7 @@ td.crossSellTitle
 	border-right: 0pt black solid;
 }
 
-td.crossSellStd 
+td.crossSellStd
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:#000000;
@@ -1186,8 +1236,8 @@ td.crossSellStd
 td.crossSellRight {border-left: 1px black solid;}
 
 /* Forms */
-td.formLabel 
-{ 
+td.formLabel
+{
 	font-size:<?=$baseText + 1 + $fontSizeChange?>pt;
 	color:#696969; font-weight:bold;
 }
@@ -1198,21 +1248,21 @@ td.formLabelBlue
 	color:<?=PRIMARY_COLOR?>; font-weight:bold;
 }
 
-td.formHeader 
-{ 
+td.formHeader
+{
 	font-size:<?=$baseText + 3 + $fontSizeChange?>pt;
 	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
-	border-bottom: 1px <?=PRIMARY_COLOR?> solid; 
+	border-bottom: 1px <?=PRIMARY_COLOR?> solid;
 }
 
 .formInputSide
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	color:#696969; 
+	color:#696969;
 }
 
-.formTextBox 
+.formTextBox
 {
 	font-size:<?=$baseText + $fontSizeChange?>pt;
 	color:<?=PRIMARY_COLOR?>;
@@ -1220,17 +1270,17 @@ td.formHeader
 	border: 1px #000000 solid;
 }
 
-.formSelect 
-{ 
+.formSelect
+{
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	color:<?=PRIMARY_COLOR?>; 
+	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
 }
 
-.formSubmit 
-{ 
+.formSubmit
+{
 	font-size:<?=$baseText + $fontSizeChange?>pt;
-	color:<?=PRIMARY_COLOR?>; 
+	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
 }
 
@@ -1271,7 +1321,7 @@ td.formHeader
 .applyMsgHeader
 {
 	font-size:10pt;
-	color:<?=PRIMARY_COLOR?>; 
+	color:<?=PRIMARY_COLOR?>;
 	font-weight:bold;
 }
 
@@ -1282,8 +1332,8 @@ td.formHeader
 
 /* Legal Page */
 p.bold
-{ 
-	font-weight: bold; 
+{
+	font-weight: bold;
 	font-size: 8pt
 }
 
@@ -1299,8 +1349,8 @@ ol.legalNumberOutline li{ padding-top: 15px}
 /* Clearfix */
 .cf:before,
 .cf:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 
 .cf:after {
@@ -1315,7 +1365,7 @@ ol.legalNumberOutline li{ padding-top: 15px}
 
 .modal {
 	display:none;
-	
+
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -1337,7 +1387,7 @@ ol.legalNumberOutline li{ padding-top: 15px}
 	left: 0;
 	width:100%;
 	height: 100%;
-	background-color: #fff; /* ie fallback */ 
+	background-color: #fff; /* ie fallback */
 	background-color: rgba(255,255,255,0.8);
 	z-index: 10;
 }
@@ -1409,8 +1459,8 @@ ol.legalNumberOutline li{ padding-top: 15px}
 .basket {
 
 	position: absolute;
-	top: -120px;
-	right: -3px;
+	top: 78px;
+	right: 16px;
 	width: 354px;
 }
 
@@ -1477,9 +1527,9 @@ ol.legalNumberOutline li{ padding-top: 15px}
 	margin: 5px;
 }
 
-td.orderItemList 
+td.orderItemList
 {
-	font-size: 10pt; 
+	font-size: 10pt;
 	color:#000000;
 	padding: 8px;
 }
@@ -1487,10 +1537,10 @@ td.orderItemList
 td.orderItemList:hover {
 }
 
-a.orderListLink 
+a.orderListLink
 {
-	font-size: 12pt; 
-	text-decoration:none; 
+	font-size: 12pt;
+	text-decoration:none;
 	color:#000000;
 	margin-left: 16px;
 	display: inline-block;
@@ -1582,7 +1632,7 @@ a.orderListLink:hover {
 		opacity: 0;
 		-webkit-transform: translateY(-20px);
 	}
-	
+
 	100% {
 		opacity: 1;
 		-webkit-transform: translateY(0);
@@ -1594,7 +1644,7 @@ a.orderListLink:hover {
 		opacity: 0;
 		-moz-transform: translateY(-20px);
 	}
-	
+
 	100% {
 		opacity: 1;
 		-moz-transform: translateY(0);
@@ -1606,7 +1656,7 @@ a.orderListLink:hover {
 		opacity: 0;
 		-o-transform: translateY(-20px);
 	}
-	
+
 	100% {
 		opacity: 1;
 		-o-transform: translateY(0);
@@ -1618,7 +1668,7 @@ a.orderListLink:hover {
 		opacity: 0;
 		transform: translateY(-20px);
 	}
-	
+
 	100% {
 		opacity: 1;
 		transform: translateY(0);
@@ -1635,7 +1685,7 @@ a.orderListLink:hover {
 	0% {
 		opacity: 1;
 	}
-	
+
 	100% {
 		opacity: 0;
 	}
@@ -1644,7 +1694,7 @@ a.orderListLink:hover {
 	0% {
 		opacity: 1;
 	}
-	
+
 	100% {
 		opacity: 0;
 	}
@@ -1653,7 +1703,7 @@ a.orderListLink:hover {
 	0% {
 		opacity: 1;
 	}
-	
+
 	100% {
 		opacity: 0;
 	}
@@ -1662,7 +1712,7 @@ a.orderListLink:hover {
 	0% {
 		opacity: 1;
 	}
-	
+
 	100% {
 		opacity: 0;
 	}

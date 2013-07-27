@@ -5,6 +5,16 @@
 <head>
 
 	<title>{$title}</title>
+	
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="/includes/css/ie6.css">
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="/includes/css/ie7.css">
+	<![endif]-->
+	<!--[if gte IE 8]>
+		<link rel="stylesheet" type="text/css" href="/includes/css/ie8.css">
+	<![endif]-->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
@@ -43,9 +53,7 @@
 				{if !$hide_search}
 				<form method="post" action="" style="margin-top:16px;position:relative">
 					<input type="text" class="searchTextBox" name="searchKeywords" size="15" placeholder="Search">
-					<button type="submit" name="navBarSubmitSearch" class="btn searchBtn" title="Search">
-						<span class="icon" style="font-size: 16px;">&#xe001</span>
-					</button>
+					<button type="submit" name="navBarSubmitSearch" class="btn searchBtn" title="Search">Search</button>
 					<a href="{$search_link}" class="btn">Advanced</a>
 					<!-- By {$type_select} in {$department_select} -->
 					<div id="searchResults"></div>
@@ -120,7 +128,7 @@
 
 		<tr>
 
-			<td colspan="3"><img src="site/interface/clear_spacer.gif" height="30"></td>
+			<td colspan="3"><img src="site/interface/clear_spacer.gif" height="16"></td>
 
 		</tr>		
 

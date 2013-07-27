@@ -1,0 +1,11 @@
+.listHeadline,.listCatalog {
+	text-align: left;
+}
+
+.btn.searchBtn {
+	padding: 2px 0;
+}
+
+#searchResults {
+	right:94px
+}
